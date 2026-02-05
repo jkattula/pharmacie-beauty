@@ -62,9 +62,9 @@ export const productIngredients = pgTable("product_ingredients", {
   productId: uuid("product_id").notNull().references(() => products.id, { onDelete: "cascade" }),
   ingredientId: uuid("ingredient_id").notNull().references(() => ingredients.id, { onDelete: "cascade" }),
   highlightFlag: boolean("highlight_flag").default(false),
-}, (table) => [
-  unique("product_ingredient_unique").on(table.productId, table.ingredientId),
-]);
+}, (table) => ({
+  productIngredientUnique: unique("product_ingredient_unique").on(table.productId, table.ingredientId),
+}));
 
 // Prices table
 export const prices = pgTable("prices", {
