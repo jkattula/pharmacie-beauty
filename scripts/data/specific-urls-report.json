@@ -1,0 +1,290 @@
+[
+  {
+    "id": "77992842-e0d8-4200-b7ca-dba6cc140728",
+    "brand": "Apivita",
+    "name": "Express Beauty Honey Hydrating Mask",
+    "ok": false
+  },
+  {
+    "id": "afdbc47f-b3c1-40d3-b09f-3e164f9a7a1b",
+    "brand": "Avène",
+    "name": "Antirougeurs Calm Soothing Mask",
+    "ok": false
+  },
+  {
+    "id": "dc0f5dc2-3b54-4eca-87a6-b43504127620",
+    "brand": "Avène",
+    "name": "Avène Antirougeurs Day Soothing Cream SPF 30",
+    "ok": false
+  },
+  {
+    "id": "a143c555-b0c9-4460-a68d-ae28767ddfa9",
+    "brand": "Avène",
+    "name": "Avène Antirougeurs Fort Relief Concentrate",
+    "ok": false
+  },
+  {
+    "id": "e0be903c-8440-406a-9adc-5e43b5b2d5b8",
+    "brand": "Avène",
+    "name": "Avène Cicalfate Restorative Lip Cream",
+    "ok": false
+  },
+  {
+    "id": "825d7a77-4b8d-4b35-99c8-59d2f678e6fa",
+    "brand": "Avène",
+    "name": "Avène Cold Cream Nourishing Lip Balm",
+    "ok": false
+  },
+  {
+    "id": "e19d91c0-764c-4663-9fc9-539f38b25c68",
+    "brand": "Avène",
+    "name": "Avène PhysioLift Eyes",
+    "ok": false
+  },
+  {
+    "id": "a0fcd0e8-0f51-4d51-ae9a-19609d56cae4",
+    "brand": "Avène",
+    "name": "Avène PhysioLift Night Smoothing Regenerating Balm",
+    "ok": false
+  },
+  {
+    "id": "641539a2-5c6c-477f-b48e-0058ac81864d",
+    "brand": "Avène",
+    "name": "Baume Lèvres Réparateur",
+    "ok": false
+  },
+  {
+    "id": "78690b33-12a2-41ad-ae79-9b0886c69045",
+    "brand": "Avène",
+    "name": "Cicalfate+ Restorative Protective Cream",
+    "ok": false
+  },
+  {
+    "id": "320912fd-35a2-4cc6-8450-d996f7571429",
+    "brand": "Avène",
+    "name": "Cicalfate+ Restorative Protective Cream",
+    "ok": false
+  },
+  {
+    "id": "bec5ed80-f0c9-48ea-b8f9-0e57b568af10",
+    "brand": "Avène",
+    "name": "Cleanance Cleansing Gel",
+    "ok": false
+  },
+  {
+    "id": "afbf65a4-4a82-42af-8848-90e8b4cb1d61",
+    "brand": "Avène",
+    "name": "Cleanance Comedomed Anti-Blemishes Concentrate",
+    "ok": false
+  },
+  {
+    "id": "48608a52-ddf5-42a8-a2bf-6cf9ac27dc5b",
+    "brand": "Avène",
+    "name": "Cleanance Comedomed Concentrate",
+    "ok": false
+  },
+  {
+    "id": "c898d20b-da4a-4c6a-9902-199e050ace7a",
+    "brand": "Avène",
+    "name": "Cold Cream Lip Balm",
+    "ok": false
+  },
+  {
+    "id": "a0594d24-7106-46ac-a460-b646929be216",
+    "brand": "Avène",
+    "name": "Crème Apaisante Anti-Rougeurs",
+    "ok": false
+  },
+  {
+    "id": "a95639f3-646a-4c7c-87ea-2d286eb128d4",
+    "brand": "Avène",
+    "name": "DermAbsolu Nutrition Nourishing Cream",
+    "ok": false
+  },
+  {
+    "id": "7710504c-e365-457c-b530-955920d98288",
+    "brand": "Avène",
+    "name": "Eau Thermale 300ml Spring Water Spray",
+    "ok": false
+  },
+  {
+    "id": "00f05537-1e45-46e0-8044-cf2c7c686b96",
+    "brand": "Avène",
+    "name": "Eau Thermale Spray",
+    "ok": false
+  },
+  {
+    "id": "cac780f8-fa22-4744-bf0b-e552967ed9d1",
+    "brand": "Avène",
+    "name": "Eau Thermale Thermal Spring Water",
+    "ok": false
+  },
+  {
+    "id": "b0d5fd74-4ca9-42d4-960a-87020f27e56c",
+    "brand": "Avène",
+    "name": "Hydrance Aqua-Gel",
+    "ok": false
+  },
+  {
+    "id": "f962c26d-a7f9-4e9d-9afc-dea82ece9caf",
+    "brand": "Avène",
+    "name": "Hydrance Intense Rehydrating Serum",
+    "ok": false
+  },
+  {
+    "id": "e8dbf5bb-be95-4a22-b7e5-9f049638bcb2",
+    "brand": "Avène",
+    "name": "Hydrance Rich Hydrating Cream",
+    "ok": false
+  },
+  {
+    "id": "11093341-212b-481a-8fef-0c45683927d9",
+    "brand": "Avène",
+    "name": "Mineral Sunscreen Fluid SPF50+",
+    "ok": false
+  },
+  {
+    "id": "5febc449-3da8-4329-8b3f-6ad28473aba8",
+    "brand": "Avène",
+    "name": "RetrinAL 0.1 Intensive Cream",
+    "ok": false
+  },
+  {
+    "id": "6383838e-3071-4a03-ba30-83c9dc1f79d8",
+    "brand": "Avène",
+    "name": "Solaire UV Mineral Tinted Cream SPF50+",
+    "ok": false
+  },
+  {
+    "id": "4007cfd2-5a25-4e00-b43f-4a0ef1196641",
+    "brand": "Avène",
+    "name": "Tolerance Control Soothing Skin Recovery Cream",
+    "ok": false
+  },
+  {
+    "id": "85a6d4bd-8b64-41bb-9b2c-1ae08132cf86",
+    "brand": "Avène",
+    "name": "XeraCalm A.D Lipid-Replenishing Cream",
+    "ok": false
+  },
+  {
+    "id": "97f5847e-064c-4864-a6c1-abb00f41b96d",
+    "brand": "Avène",
+    "name": "XéraCalm A.D Lipid-Replenishing Cream",
+    "ok": false
+  },
+  {
+    "id": "fda00a0e-8304-4de2-9100-3724421b381f",
+    "brand": "Biafine",
+    "name": "Biafine Emulsion",
+    "ok": false
+  },
+  {
+    "id": "09bdaa87-c345-42e0-9852-d46633edb97f",
+    "brand": "Bioderma",
+    "name": "Atoderm Intensive Baume",
+    "ok": false
+  },
+  {
+    "id": "7dcb0e83-e232-4d9e-86cc-a5c4100de7a2",
+    "brand": "Bioderma",
+    "name": "Atoderm Shower Oil",
+    "ok": false
+  },
+  {
+    "id": "43373e0d-3629-436f-bd85-1794fdbee366",
+    "brand": "Bioderma",
+    "name": "Bioderma Sensibio H2O Micellar Water",
+    "ok": false
+  },
+  {
+    "id": "00dc5349-9301-4d5d-a85e-e01c60effa1e",
+    "brand": "Bioderma",
+    "name": "Cicabio Baume",
+    "ok": false
+  },
+  {
+    "id": "4a5c6345-8c55-46bf-9741-eae3e8be37a6",
+    "brand": "Bioderma",
+    "name": "Cicabio Restorative Lip Balm",
+    "ok": false
+  },
+  {
+    "id": "09a48388-4ee4-47b9-afbd-ebbf821d1921",
+    "brand": "Bioderma",
+    "name": "Créaline AR (Anti-Rougeurs) Cream",
+    "ok": false
+  },
+  {
+    "id": "8e96903a-6482-4d75-9f11-6bd220bfb895",
+    "brand": "Bioderma",
+    "name": "Hydrabio Serum",
+    "ok": false
+  },
+  {
+    "id": "ff85011d-0d8d-480b-9789-76207239c65e",
+    "brand": "Bioderma",
+    "name": "Hydrabio Tonique Hydrating Toner",
+    "ok": false
+  },
+  {
+    "id": "6e7e8172-1191-40fa-a42b-03e87dbdc7a1",
+    "brand": "Bioderma",
+    "name": "Photoderm Nude Touch SPF50+",
+    "ok": false
+  },
+  {
+    "id": "bb8294b1-5df0-4d00-9366-ccc8ff4c0f07",
+    "brand": "Bioderma",
+    "name": "Sébium Global Cover",
+    "ok": false
+  },
+  {
+    "id": "b7ca2e8a-8c16-4893-be88-1025e2032316",
+    "brand": "Bioderma",
+    "name": "Sebium Pore Refiner",
+    "ok": false
+  },
+  {
+    "id": "4d62b112-a5b4-4e64-ba94-dc9b70f5c9f8",
+    "brand": "Bioderma",
+    "name": "Sensibio AR Anti-Redness Care",
+    "ok": false
+  },
+  {
+    "id": "f918bbe1-7957-490d-98d1-e9b037cfbb99",
+    "brand": "Biotherm",
+    "name": "Aquasource Hyalu Plump Gel",
+    "ok": false
+  },
+  {
+    "id": "a41d2386-c723-4c21-a6d1-918a2e40645c",
+    "brand": "Biotherm",
+    "name": "Life Plankton Essence",
+    "ok": false
+  },
+  {
+    "id": "a81863ab-b9f1-4d8a-bc94-700877d5125f",
+    "brand": "Boiron",
+    "name": "Homéoplasmine Multi-Use Balm",
+    "ok": false
+  },
+  {
+    "id": "6d39bad1-a931-483d-b7af-31e2a8c8e94f",
+    "brand": "By Terry",
+    "name": "Baume de Rose Lip Balm",
+    "ok": false
+  },
+  {
+    "id": "8be6cdf3-a865-4de9-827e-fff79ec5aa93",
+    "brand": "Cattier",
+    "name": "Cattier Nourishing Lip Care with Shea Butter",
+    "ok": false
+  },
+  {
+    "id": "2ad7ebb3-2bc7-4443-888b-77e70f024130",
+    "brand": "Caudalie",
+    "name": "Beauty Elixir",
+    "ok": false
+  }
+]
