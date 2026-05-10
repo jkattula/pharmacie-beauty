@@ -95,3 +95,40 @@ export function getPlaceholderImage(productName: string): string {
   const encoded = encodeURIComponent(productName);
   return `https://placehold.co/400x400/F6F4F1/8A927C?text=${encoded}`;
 }
+
+/**
+ * Transform a database image URL to the correct public path.
+ * Handles old Replit paths (/attached_assets/...) and Supabase Storage URLs,
+ * converting them to /images/products/... paths served by Vercel.
+ */
+export function getProductImageUrl(dbImageUrl: string | null, productName: string): string {
+  if (!dbImageUrl) return getPlaceholderImage(productName);
+
+  // If already a correct path, return as-is
+  if (dbImageUrl.startsWith('/images/products/')) return dbImageUrl;
+
+  // Extract filename from old paths
+  let filename = '';
+
+  if (dbImageUrl.includes('/attached_assets/generated_images/')) {
+    filename = dbImageUrl.split('/attached_assets/generated_images/').pop() || '';
+  } else if (dbImageUrl.includes('/product-images/')) {
+    filename = dbImageUrl.split('/product-images/').pop() || '';
+  } else {
+    filename = dbImageUrl.split('/').pop() || '';
+  }
+
+  if (!filename) return getPlaceholderImage(productName);
+
+  // Decode URI components first
+  filename = decodeURIComponent(filename);
+
+  // Normalize: remove accents, replace special chars
+  const normalized = filename
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // Remove diacritics
+    .replace(/\+/g, '_plus_')        // Replace +
+    .replace(/[^a-zA-Z0-9_.\-]/g, '_'); // Replace other specials
+
+  return `/images/products/${normalized}`;
+}

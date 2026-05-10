@@ -10,9 +10,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: '**.supabase.co',
       },
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+      },
     ],
-    // Allow unoptimized images for local assets during development
-    unoptimized: process.env.NODE_ENV === 'development',
   },
 
   // Experimental features

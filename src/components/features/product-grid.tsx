@@ -39,7 +39,7 @@ export function ProductGrid({
   return (
     <div
       className={cn(
-        "grid grid-cols-2 gap-3 sm:gap-4",
+        "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 lg:gap-6",
         className
       )}
     >
@@ -57,7 +57,7 @@ export function ProductGrid({
 // Loading skeleton
 function ProductGridSkeleton({ className }: { className?: string }) {
   return (
-    <div className={cn("grid grid-cols-2 gap-3 sm:gap-4", className)}>
+    <div className={cn("grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 lg:gap-6", className)}>
       {Array.from({ length: 6 }).map((_, i) => (
         <div key={i} className="flex flex-col bg-card rounded-lg overflow-hidden shadow-card">
           {/* Image skeleton */}

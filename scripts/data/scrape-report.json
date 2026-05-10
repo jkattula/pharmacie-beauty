@@ -1,0 +1,2472 @@
+[
+  {
+    "id": "1a1032e5-163e-4cb7-8600-66f8e02e0b95",
+    "brand": "Weleda",
+    "name": "Skin Food Light",
+    "ok": true,
+    "size": 13412,
+    "source": "https://www.target.com/p/weleda-skin-food-light-nourishing-cream-chamomile-pansy-rosemary-38-calendula-2-5-fl-oz/-/A-75561968",
+    "image": "https://target.scene7.com/is/image/Target/GUEST_6cafcc4d-5226-45c4-ad35-0db590bff2d3"
+  },
+  {
+    "id": "77992842-e0d8-4200-b7ca-dba6cc140728",
+    "brand": "Apivita",
+    "name": "Express Beauty Honey Hydrating Mask",
+    "ok": true,
+    "size": 286253,
+    "source": "https://www.walmart.com/ip/Apivita-Express-Beauty-Face-Mask-with-Honey-Moisturizing-Nourishing-6x-2x8ml/827421652",
+    "image": "https://i5.walmartimages.com/seo/Apivita-Express-Beauty-Face-Mask-with-Honey-Moisturizing-Nourishing-6x-2x8ml_647ae3f6-adeb-4f7b-a534-f782a84d394d.33059e8dea2bf1f679be74c89fd3c692.jpeg"
+  },
+  {
+    "id": "bec5ed80-f0c9-48ea-b8f9-0e57b568af10",
+    "brand": "Avène",
+    "name": "Cleanance Cleansing Gel",
+    "ok": true,
+    "size": 13865,
+    "source": "https://www.target.com/p/avene-cleanance-cleansing-gel-6-7-fl-oz/-/A-91940643",
+    "image": "https://target.scene7.com/is/image/Target/GUEST_953cfa3e-9a39-4cd6-94df-90ef939ce02b"
+  },
+  {
+    "id": "a95639f3-646a-4c7c-87ea-2d286eb128d4",
+    "brand": "Avène",
+    "name": "DermAbsolu Nutrition Nourishing Cream",
+    "ok": false,
+    "reason": "download_failed: not an image: application/octet-stream",
+    "source": "https://www.eau-thermale-avene.ca/en_ca/range/dermabsolu",
+    "image": "https://www.eau-thermale-avene.ca/var/dfp/storage/images/_aliases/social_network_image/9/3/8/5/3415839-608-eng-CA/61a73cc1ec82-22_av_logo_lc-png-png"
+  },
+  {
+    "id": "7710504c-e365-457c-b530-955920d98288",
+    "brand": "Avène",
+    "name": "Eau Thermale 300ml Spring Water Spray",
+    "ok": true,
+    "size": 10167,
+    "source": "https://www.target.com/p/av-232-ne-thermal-spring-water-face-mist-spray-5-0-fl-oz/-/A-89658744",
+    "image": "https://target.scene7.com/is/image/Target/GUEST_6741d402-642c-4fec-97c7-0b7d44b3713f"
+  },
+  {
+    "id": "a95639f3-646a-4c7c-87ea-2d286eb128d4",
+    "brand": "Avène",
+    "name": "DermAbsolu Nutrition Nourishing Cream",
+    "ok": false,
+    "reason": "download_failed: not an image: application/octet-stream",
+    "source": "https://www.eau-thermale-avene.ca/en_ca/range/dermabsolu",
+    "image": "https://www.eau-thermale-avene.ca/var/dfp/storage/images/_aliases/social_network_image/9/3/8/5/3415839-608-eng-CA/61a73cc1ec82-22_av_logo_lc-png-png"
+  },
+  {
+    "id": "5febc449-3da8-4329-8b3f-6ad28473aba8",
+    "brand": "Avène",
+    "name": "RetrinAL 0.1 Intensive Cream",
+    "ok": true,
+    "size": 264208,
+    "source": "https://www.dermstore.com/p/avene-professional-retrinal-0.1-cream/11286350/",
+    "image": "https://static.thcdn.com/productimg/original/11286350-2065167255908108.jpg"
+  },
+  {
+    "id": "e8dbf5bb-be95-4a22-b7e5-9f049638bcb2",
+    "brand": "Avène",
+    "name": "Hydrance Rich Hydrating Cream",
+    "ok": true,
+    "size": 280708,
+    "source": "https://www.dermstore.com/p/avene-hydrance-rich-hydrating-cream-for-dehydrated-skin-40ml/11638678/",
+    "image": "https://static.thcdn.com/productimg/original/11638678-1115165677920852.jpg"
+  },
+  {
+    "id": "4007cfd2-5a25-4e00-b43f-4a0ef1196641",
+    "brand": "Avène",
+    "name": "Tolerance Control Soothing Skin Recovery Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "fda00a0e-8304-4de2-9100-3724421b381f",
+    "brand": "Biafine",
+    "name": "Biafine Emulsion",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "11093341-212b-481a-8fef-0c45683927d9",
+    "brand": "Avène",
+    "name": "Mineral Sunscreen Fluid SPF50+",
+    "ok": true,
+    "size": 14273,
+    "source": "https://www.target.com/p/avene-mineral-sunscreen-multi-defense-fluid-spf-50-1-3-fl-oz/-/A-94582251",
+    "image": "https://target.scene7.com/is/image/Target/GUEST_bdc4afee-e917-4477-89b3-698dd70ca416"
+  },
+  {
+    "id": "7dcb0e83-e232-4d9e-86cc-a5c4100de7a2",
+    "brand": "Bioderma",
+    "name": "Atoderm Shower Oil",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "ff85011d-0d8d-480b-9789-76207239c65e",
+    "brand": "Bioderma",
+    "name": "Hydrabio Tonique Hydrating Toner",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6e7e8172-1191-40fa-a42b-03e87dbdc7a1",
+    "brand": "Bioderma",
+    "name": "Photoderm Nude Touch SPF50+",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b7ca2e8a-8c16-4893-be88-1025e2032316",
+    "brand": "Bioderma",
+    "name": "Sebium Pore Refiner",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6383838e-3071-4a03-ba30-83c9dc1f79d8",
+    "brand": "Avène",
+    "name": "Solaire UV Mineral Tinted Cream SPF50+",
+    "ok": true,
+    "size": 121366,
+    "source": "https://www.ulta.com/p/mineral-sunscreen-multi-defense-fluid-tinted-spf-50-pimprod2046267?sku=2625801",
+    "image": "https://media.ulta.com/i/ulta/2625801?w=500&amp;h=500"
+  },
+  {
+    "id": "1b40e02d-dcf8-42c0-ba25-4e89d097555c",
+    "brand": "Bioderma",
+    "name": "Sensibio Defensive Active Care",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "35f37ede-223a-4d79-b294-368f6693f917",
+    "brand": "Biologique Recherche",
+    "name": "Lotion P50 Original",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "a41d2386-c723-4c21-a6d1-918a2e40645c",
+    "brand": "Biotherm",
+    "name": "Life Plankton Essence",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "f918bbe1-7957-490d-98d1-e9b037cfbb99",
+    "brand": "Biotherm",
+    "name": "Aquasource Hyalu Plump Gel",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "a81863ab-b9f1-4d8a-bc94-700877d5125f",
+    "brand": "Boiron",
+    "name": "Homéoplasmine Multi-Use Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6d39bad1-a931-483d-b7af-31e2a8c8e94f",
+    "brand": "By Terry",
+    "name": "Baume de Rose Lip Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "03eecd1d-371e-4e00-83f8-ab4e19b10b87",
+    "brand": "Caudalie",
+    "name": "Grape Water Mist",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "30d95a0b-9139-4dcc-bfb3-c45926408bb6",
+    "brand": "Caudalie",
+    "name": "Instant Detox Mask",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "ad9a2d30-6848-4b41-9059-b4fdc18e9209",
+    "brand": "Caudalie",
+    "name": "Resveratrol-Lift Firming Cashmere Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "d3f6bf52-264e-4825-9a93-f614fcb81318",
+    "brand": "Caudalie",
+    "name": "Vinopure Spot Solution",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "f1eb1ec3-81ac-4c11-8d53-2ae9e19b09ae",
+    "brand": "Caudalie",
+    "name": "Vinopure Pore Purifying Gel Cleanser",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "4c86f7c5-fbe4-4314-8067-8a05959a843d",
+    "brand": "Caudalie",
+    "name": "Vinoperfect Brightening Eye Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6e12aaac-aaaf-42a7-a3c5-42d0a51f73ed",
+    "brand": "Caudalie",
+    "name": "Vinosun Invisible High Protection Stick SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6136abd0-7bfe-4876-8c10-ec65d5aa4549",
+    "brand": "Christophe Robin",
+    "name": "Cleansing Purifying Sea Salt Scrub",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "52e0c1c1-369f-40b8-ad2e-bcf60a74afc8",
+    "brand": "Christophe Robin",
+    "name": "Cleansing Volumizing Paste with Pure Rassoul Clay",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c9e33067-3bd6-415f-b490-ff85447adfbf",
+    "brand": "Caudalie",
+    "name": "Vinosun Protect SPF50 Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "66cf0cae-59e4-4556-bf38-c82c3137fbc0",
+    "brand": "Clarins",
+    "name": "Beauty Flash Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b29cf94d-5ba7-4a9f-9cfc-94cc17ffdb83",
+    "brand": "Cosmetics 27",
+    "name": "Baume 27 Repairing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c7e043fe-d858-4946-8559-2b89dc2db8f2",
+    "brand": "Clarins",
+    "name": "Double Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b05a38cb-e435-414c-b60a-36dff2605811",
+    "brand": "Darphin",
+    "name": "Intral Redness Relief Soothing Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "e9b919e6-f09d-4a8a-b219-fe4a4bbc6a27",
+    "brand": "Darphin",
+    "name": "Niaouli Aromatic Care",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "8dc126a4-0895-4031-9f40-2e8d6a2d61c6",
+    "brand": "Ducray",
+    "name": "Kelual DS Anti-Recurrence Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "cddaef51-4bc7-42a5-80fb-815d395f0fd7",
+    "brand": "Ducray",
+    "name": "Anaphase+ Anti-Hair Loss Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "77045940-cb13-437b-9e2b-ca711664c3f3",
+    "brand": "Ducray",
+    "name": "Squanorm Anti-Dandruff Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "3594a644-d27e-4c7e-a0dd-9deddce6cbe3",
+    "brand": "Embryolisse",
+    "name": "Cicalish Lip Care",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "4c59f82a-2ede-4b96-88a4-272cc9b8d4cb",
+    "brand": "Embryolisse",
+    "name": "Filaderme Émulsion",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "5781fb78-d7d8-46ff-985e-c896a95c200d",
+    "brand": "Embryolisse",
+    "name": "Lait-Crème Concentré",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "949165bc-6ece-43f9-b32e-85e0535bb681",
+    "brand": "Embryolisse",
+    "name": "Lait-Crème Concentré Anti-Age",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "2992d4b0-5511-4f6a-bc84-f428f97f8883",
+    "brand": "Embryolisse",
+    "name": "Lait-Crème Sensitive",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "02c687c0-455d-4654-ab0f-450cf7ac4312",
+    "brand": "Eucerin",
+    "name": "Replenishing Skin Relief Face Cream with 5% Urea",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "2d34b146-ac3e-4b99-a2e2-95a44700dc22",
+    "brand": "Eucerin",
+    "name": "Aquaphor Soothing Skin Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "921a89dd-8c09-4908-908c-b341d04f060f",
+    "brand": "Filorga",
+    "name": "Hydra-Hyal Hydrating Plumping Concentrated Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "af540509-f60e-4de2-92b9-607a1f8e1937",
+    "brand": "Filorga",
+    "name": "Meso-Mask Anti-Wrinkle Lightening Mask",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "831ce835-6137-4240-9aa3-bd01a689b813",
+    "brand": "Filorga",
+    "name": "Optim-Eyes Eye Contour Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "4769214a-7bbb-4c01-a2e0-7f58a4f04c85",
+    "brand": "Filorga",
+    "name": "NCEF-Reverse Regenerating Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6ee5bda0-0659-4f01-b8f3-4a9d6b756b12",
+    "brand": "Filorga",
+    "name": "Skin-Absolute Day Ultimate Rejuvenating Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "9a55f72e-ec80-4bfb-b98e-c599128d66f9",
+    "brand": "Filorga",
+    "name": "Time-Filler Eyes Absolute Eye Correction",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "dce495d1-3fb3-49cb-9afb-36d5a6874194",
+    "brand": "Galenic",
+    "name": "Pur Cleansing Foaming Gel",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6fddae75-bbbf-475d-86d2-6ac92fd1dc5d",
+    "brand": "Galenic",
+    "name": "Argane Nutritive Comforting Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "2c3affa1-7397-4fbc-9263-227640811f78",
+    "brand": "Garancia",
+    "name": "Mille et Une Nuits Anti-Wrinkle Sleeping Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "47b1a3cc-7179-4c29-a46c-36a55030b927",
+    "brand": "Hexomedine",
+    "name": "Transcutanee Antiseptic Solution",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b56075f6-0dda-4b25-a086-b9d64c3f1e29",
+    "brand": "Ialuset",
+    "name": "Hyaluronic Acid Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "7f32f710-6798-474f-87c1-174e42d0d77a",
+    "brand": "Klorane",
+    "name": "Anti-Yellowing Silver Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "41c88b07-5e44-43f4-b018-209e4b7b7fd5",
+    "brand": "Klorane",
+    "name": "Centaury Brightening Eye Patches",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "f0b27b06-4d4c-4f4a-9d04-d2c5900e2408",
+    "brand": "Klorane",
+    "name": "Cica Balm Rescue for Sensitive Scalp",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "9bf2652f-7a45-4fd0-b6f9-1913a570e2c3",
+    "brand": "Klorane",
+    "name": "Smoothing and Soothing Eye Patches with Cornflower",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "bb74db02-75ad-4ae5-a7e6-9f520cdf9baf",
+    "brand": "Klorane",
+    "name": "Mango Butter Conditioner",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "652738ac-cbb2-49aa-b75b-8811f9c1d660",
+    "brand": "La Roche-Posay",
+    "name": "Anthelios Mineral Tinted Sunscreen SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "7b936191-7f4a-49ad-87bb-ae71c7a29d56",
+    "brand": "La Roche-Posay",
+    "name": "Anthelios Pigment Correct SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "96ab4bfe-0674-4bf8-964c-2aa37b668956",
+    "brand": "La Roche-Posay",
+    "name": "Effaclar Adapalene Gel 0.1%",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "55fa75a2-7275-4c4c-98fd-8451367f0c04",
+    "brand": "La Roche-Posay",
+    "name": "Anthelios UV Mune 400 Invisible Fluid SPF50+",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b69817a7-d686-4f05-b26d-e7566f626f2e",
+    "brand": "La Roche-Posay",
+    "name": "Effaclar Micro-Peeling Purifying Gel",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "52e6333f-1d88-42da-bb4d-f9ac4bb666df",
+    "brand": "La Roche-Posay",
+    "name": "Hyalu B5 Hyaluronic Acid Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c955ccc8-8d08-4a73-b3a3-d6cd155207e5",
+    "brand": "La Roche-Posay",
+    "name": "Lipikar Syndet AP+ Cleansing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "f942ab6c-6baf-4fc5-8118-69d3bc13e1b2",
+    "brand": "La Roche-Posay",
+    "name": "Lipikar Baume AP+M",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "3b7007a4-3f49-453b-9c8e-385b85049f4d",
+    "brand": "La Roche-Posay",
+    "name": "Mela B3 Dark Spot Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "cbb08add-f583-4cdf-8a77-41f1796bbf2c",
+    "brand": "La Roche-Posay",
+    "name": "Pure Niacinamide 10 Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "f8a71f3e-876d-421e-99d1-d3ef6a66db41",
+    "brand": "La Roche-Posay",
+    "name": "Toleriane Hydrating Gentle Cleanser",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "67efe4de-c1f7-4f87-9fc2-6408ca026714",
+    "brand": "La Roche-Posay",
+    "name": "Serozinc Mattifying Mist",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "132b4535-4474-49c7-a4ae-27ed84788080",
+    "brand": "La Rosée",
+    "name": "Cleansing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b92502d7-cd61-4f52-a212-6d01aa780c48",
+    "brand": "La Rosée",
+    "name": "Multi-Purpose Stick SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "e9c8e2ce-aeed-4d38-8554-2774eff06142",
+    "brand": "La Rosée",
+    "name": "Skin Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "bf77d1c8-b9d1-425d-b78a-603729af4afa",
+    "brand": "Lierac",
+    "name": "Hydragenist Moisturizing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "37c8139d-9c14-45be-b8c1-6ca8ebccc12b",
+    "brand": "Lierac",
+    "name": "Lumilogie Day & Night Dark-Spot Correction Concentrate",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "2dd299be-60e6-4254-a9c8-08cf78f97ae4",
+    "brand": "Lierac",
+    "name": "Premium La Crème Voluptueuse",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "afd1fd38-7cb7-440a-ac43-a56403330110",
+    "brand": "Manucurist",
+    "name": "Active Glow Nail Polish",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "936bea99-ca6d-425a-a30b-edf8b12065c0",
+    "brand": "Manucurist",
+    "name": "Green Flash LED Nail Polish",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "a3edf650-e4e3-4406-94f5-62e2ff247b15",
+    "brand": "Marvis",
+    "name": "Smokers Whitening Mint Toothpaste",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "12c1aa1c-4a98-4ed6-8493-9f8d44285297",
+    "brand": "Marvis",
+    "name": "Strong Mint Toothpaste",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c4ca12ee-06d6-48f0-a7f3-1bb5735e70ea",
+    "brand": "Mustela",
+    "name": "Cleansing Gel Hair and Body",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c92fd6cf-f753-41e0-9431-15615bdad5d6",
+    "brand": "Mediceutics",
+    "name": "Fluide Solaire SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "49a324e9-52f4-487f-8ea7-051527edc545",
+    "brand": "Mustela",
+    "name": "Hydra Bébé Body Lotion",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "93bffa78-bee6-4e62-93e7-640f796d1f44",
+    "brand": "Mustela",
+    "name": "Stelatopia Emollient Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "71b9e9eb-9894-4092-9b69-4c1a756d3421",
+    "brand": "Nuxe",
+    "name": "Crème Fraîche de Beauté 48h Moisturizer",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "3abcea01-49d6-49e7-b798-e7515bf87858",
+    "brand": "Noreva",
+    "name": "Exfoliac NK Mat Daily Moisturizer",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "acc91fc3-2151-4a3a-b807-9c908185e732",
+    "brand": "Nuxe",
+    "name": "Huile Prodigieuse Florale",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "517e0292-b638-4a5e-b889-819f98a82089",
+    "brand": "Nuxe",
+    "name": "Huile Prodigieuse Or Shimmering Dry Oil",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "139c391f-9728-4a6a-a58c-065c927ba204",
+    "brand": "Nuxe",
+    "name": "Merveillance Lift Firming Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "24d01a06-1080-4739-a1e6-1f79883ec9fb",
+    "brand": "Nuxe",
+    "name": "Rêve de Miel Gentle Face Cleanser",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c432b822-1abc-4da9-8527-14fc317fe831",
+    "brand": "Nuxe",
+    "name": "Rêve de Miel Honey Lip Oil",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "3dfb3178-04c5-4c61-87a4-ec5c50f0b65a",
+    "brand": "Panier des Sens",
+    "name": "Mediterranean Olive Body Lotion",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "7f5b218b-4bb3-482d-b4e9-a166a879b6ad",
+    "brand": "Patyka",
+    "name": "Lift Sculpt Firming Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "0a192495-10bf-432b-af21-f17d768eef3c",
+    "brand": "Panier des Sens",
+    "name": "Provence Rose Hand Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "8ce0cdd3-0a1f-49f8-9270-deabe4ac2daf",
+    "brand": "Patyka",
+    "name": "Pure Radiance Brightening Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6a70fe00-be9a-4050-80d3-76dc9cfa3828",
+    "brand": "Payot",
+    "name": "Crème No.2 Soothing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "70fadd63-ce29-420c-809f-6e5c5a5029d8",
+    "brand": "Payot",
+    "name": "Pâte Grise The Original Purifying Treatment",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "92a0bb47-6f0b-48db-a3ea-f8a32f397799",
+    "brand": "Phyto",
+    "name": "Phytocyane Densifying Treatment",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "ee415e5a-a188-431b-9dd1-9f67c540f3a0",
+    "brand": "Phyto",
+    "name": "Phytodefrisant Anti-Frizz Botanical Blow-Dry Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "5a25289d-bee6-47cd-8e01-781fa41d1114",
+    "brand": "Puressentiel",
+    "name": "Muscles & Joints Cryo Pure Roller",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "99b17aa1-d313-43f3-b049-4fa910e78bf1",
+    "brand": "René Furterer",
+    "name": "Karité Hydra Hydrating Mask",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "94d2197f-8b28-419c-a1c3-7b3719549e92",
+    "brand": "Puressentiel",
+    "name": "Respiratory Decongestant Inhaler",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "62c7abfc-5064-4c02-a38c-65e052626477",
+    "brand": "Roger & Gallet",
+    "name": "Bois d'Orange Eau Fraiche",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "041e1549-fd61-480e-bcf4-675b0067a391",
+    "brand": "Roger & Gallet",
+    "name": "Fleur d'Osmanthus Soap",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "0c13c736-9574-4e03-9bae-3d8810f247d1",
+    "brand": "SVR",
+    "name": "Ampoule Vitamin C Anti-Fatigue",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "d0d1389a-9a4e-4da6-9089-9d2c990ca11f",
+    "brand": "SVR",
+    "name": "Hydraliane Riche",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "25314fbe-96b7-46b0-abb8-5c6bfa18e7de",
+    "brand": "SVR",
+    "name": "Sebiaclear Active",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "dc518c54-c291-44d8-8c2a-3ed22a09dbe1",
+    "brand": "SVR",
+    "name": "Sebiaclear Mat + Pores",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "8f19c053-d71e-471c-b16d-db08302a5638",
+    "brand": "SVR",
+    "name": "Topialyse Baume Protect+",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "abb36556-7c1f-4da0-9536-1ed129773052",
+    "brand": "Talika",
+    "name": "Eye Therapy Patch",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "cf93ceeb-8347-4782-8dfd-8281ef8732b4",
+    "brand": "Talika",
+    "name": "Lipocils Eyelash Conditioning Gel",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "488c65fb-b252-4657-bba4-1edcf035c6cb",
+    "brand": "Topicrem",
+    "name": "Hydra+ Light Moisturizing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "588d6fe6-dc5a-465b-b484-4b45e4f4506b",
+    "brand": "Topicrem",
+    "name": "Ultra-Moisturizing Body Milk",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "69bb5649-bf49-48d5-b26e-74eaea32e34c",
+    "brand": "Uriage",
+    "name": "Bariéderm Cica Repairing Lip Stick",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "d8adda03-ec9a-4a90-ada7-2078b9c4436b",
+    "brand": "Uriage",
+    "name": "DS Hair Soothing Cleansing Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c56335ce-965c-490e-b772-0cba3a28f543",
+    "brand": "Uriage",
+    "name": "Eau Thermale Water Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "d43740e0-bfad-47cb-a1bf-43729e1560ea",
+    "brand": "Vichy",
+    "name": "Deodorant 24H Hypoallergenic Dry Touch",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "305aacc0-d274-42d6-8107-7a8a245d0e53",
+    "brand": "Vichy",
+    "name": "Capital Soleil UV Age Daily SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "8777be07-2c7d-455a-bbe8-0b8546b01976",
+    "brand": "Vichy",
+    "name": "Dercos Anti-Dandruff Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "e246f3fd-eb13-4832-b834-24f28f01e645",
+    "brand": "Vichy",
+    "name": "LiftActiv Supreme Day Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "ad787012-368a-4df7-b4c0-22124d10340e",
+    "brand": "Vichy",
+    "name": "Mineral 89 Probiotic Fractions Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "9506f4dc-9d46-4fae-9fec-201879788c60",
+    "brand": "Vichy",
+    "name": "LiftActiv Vitamin C Brightening Skin Corrector",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "a7557382-2be6-49fe-a5e0-55bf73d7191f",
+    "brand": "Weleda",
+    "name": "Skin Food Lip Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "54c996eb-09ce-4eb8-a86d-1578c785a9f5",
+    "brand": "Voltaren",
+    "name": "Actigo Pain Relief Gel",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b699d89a-02d6-460c-bba4-9fefd42a3360",
+    "brand": "Weleda",
+    "name": "Skin Food Original",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "792926dd-142e-4de8-a756-ac78928b76e0",
+    "brand": "Yon-Ka",
+    "name": "Lotion Yon-Ka Toner",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "fda00a0e-8304-4de2-9100-3724421b381f",
+    "brand": "Biafine",
+    "name": "Biafine Emulsion",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "a95639f3-646a-4c7c-87ea-2d286eb128d4",
+    "brand": "Avène",
+    "name": "DermAbsolu Nutrition Nourishing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "4007cfd2-5a25-4e00-b43f-4a0ef1196641",
+    "brand": "Avène",
+    "name": "Tolerance Control Soothing Skin Recovery Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "7dcb0e83-e232-4d9e-86cc-a5c4100de7a2",
+    "brand": "Bioderma",
+    "name": "Atoderm Shower Oil",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "ff85011d-0d8d-480b-9789-76207239c65e",
+    "brand": "Bioderma",
+    "name": "Hydrabio Tonique Hydrating Toner",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "1b40e02d-dcf8-42c0-ba25-4e89d097555c",
+    "brand": "Bioderma",
+    "name": "Sensibio Defensive Active Care",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6e7e8172-1191-40fa-a42b-03e87dbdc7a1",
+    "brand": "Bioderma",
+    "name": "Photoderm Nude Touch SPF50+",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b7ca2e8a-8c16-4893-be88-1025e2032316",
+    "brand": "Bioderma",
+    "name": "Sebium Pore Refiner",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "a81863ab-b9f1-4d8a-bc94-700877d5125f",
+    "brand": "Boiron",
+    "name": "Homéoplasmine Multi-Use Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "f918bbe1-7957-490d-98d1-e9b037cfbb99",
+    "brand": "Biotherm",
+    "name": "Aquasource Hyalu Plump Gel",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "35f37ede-223a-4d79-b294-368f6693f917",
+    "brand": "Biologique Recherche",
+    "name": "Lotion P50 Original",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "a41d2386-c723-4c21-a6d1-918a2e40645c",
+    "brand": "Biotherm",
+    "name": "Life Plankton Essence",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "ad9a2d30-6848-4b41-9059-b4fdc18e9209",
+    "brand": "Caudalie",
+    "name": "Resveratrol-Lift Firming Cashmere Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "03eecd1d-371e-4e00-83f8-ab4e19b10b87",
+    "brand": "Caudalie",
+    "name": "Grape Water Mist",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "30d95a0b-9139-4dcc-bfb3-c45926408bb6",
+    "brand": "Caudalie",
+    "name": "Instant Detox Mask",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6d39bad1-a931-483d-b7af-31e2a8c8e94f",
+    "brand": "By Terry",
+    "name": "Baume de Rose Lip Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "d3f6bf52-264e-4825-9a93-f614fcb81318",
+    "brand": "Caudalie",
+    "name": "Vinopure Spot Solution",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "f1eb1ec3-81ac-4c11-8d53-2ae9e19b09ae",
+    "brand": "Caudalie",
+    "name": "Vinopure Pore Purifying Gel Cleanser",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "4c86f7c5-fbe4-4314-8067-8a05959a843d",
+    "brand": "Caudalie",
+    "name": "Vinoperfect Brightening Eye Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6e12aaac-aaaf-42a7-a3c5-42d0a51f73ed",
+    "brand": "Caudalie",
+    "name": "Vinosun Invisible High Protection Stick SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c9e33067-3bd6-415f-b490-ff85447adfbf",
+    "brand": "Caudalie",
+    "name": "Vinosun Protect SPF50 Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "52e0c1c1-369f-40b8-ad2e-bcf60a74afc8",
+    "brand": "Christophe Robin",
+    "name": "Cleansing Volumizing Paste with Pure Rassoul Clay",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6136abd0-7bfe-4876-8c10-ec65d5aa4549",
+    "brand": "Christophe Robin",
+    "name": "Cleansing Purifying Sea Salt Scrub",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "66cf0cae-59e4-4556-bf38-c82c3137fbc0",
+    "brand": "Clarins",
+    "name": "Beauty Flash Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b29cf94d-5ba7-4a9f-9cfc-94cc17ffdb83",
+    "brand": "Cosmetics 27",
+    "name": "Baume 27 Repairing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b05a38cb-e435-414c-b60a-36dff2605811",
+    "brand": "Darphin",
+    "name": "Intral Redness Relief Soothing Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c7e043fe-d858-4946-8559-2b89dc2db8f2",
+    "brand": "Clarins",
+    "name": "Double Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "e9b919e6-f09d-4a8a-b219-fe4a4bbc6a27",
+    "brand": "Darphin",
+    "name": "Niaouli Aromatic Care",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "8dc126a4-0895-4031-9f40-2e8d6a2d61c6",
+    "brand": "Ducray",
+    "name": "Kelual DS Anti-Recurrence Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "cddaef51-4bc7-42a5-80fb-815d395f0fd7",
+    "brand": "Ducray",
+    "name": "Anaphase+ Anti-Hair Loss Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "3594a644-d27e-4c7e-a0dd-9deddce6cbe3",
+    "brand": "Embryolisse",
+    "name": "Cicalish Lip Care",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "77045940-cb13-437b-9e2b-ca711664c3f3",
+    "brand": "Ducray",
+    "name": "Squanorm Anti-Dandruff Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "5781fb78-d7d8-46ff-985e-c896a95c200d",
+    "brand": "Embryolisse",
+    "name": "Lait-Crème Concentré",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "4c59f82a-2ede-4b96-88a4-272cc9b8d4cb",
+    "brand": "Embryolisse",
+    "name": "Filaderme Émulsion",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "949165bc-6ece-43f9-b32e-85e0535bb681",
+    "brand": "Embryolisse",
+    "name": "Lait-Crème Concentré Anti-Age",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "2992d4b0-5511-4f6a-bc84-f428f97f8883",
+    "brand": "Embryolisse",
+    "name": "Lait-Crème Sensitive",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "921a89dd-8c09-4908-908c-b341d04f060f",
+    "brand": "Filorga",
+    "name": "Hydra-Hyal Hydrating Plumping Concentrated Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "2d34b146-ac3e-4b99-a2e2-95a44700dc22",
+    "brand": "Eucerin",
+    "name": "Aquaphor Soothing Skin Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "af540509-f60e-4de2-92b9-607a1f8e1937",
+    "brand": "Filorga",
+    "name": "Meso-Mask Anti-Wrinkle Lightening Mask",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "02c687c0-455d-4654-ab0f-450cf7ac4312",
+    "brand": "Eucerin",
+    "name": "Replenishing Skin Relief Face Cream with 5% Urea",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "4769214a-7bbb-4c01-a2e0-7f58a4f04c85",
+    "brand": "Filorga",
+    "name": "NCEF-Reverse Regenerating Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6ee5bda0-0659-4f01-b8f3-4a9d6b756b12",
+    "brand": "Filorga",
+    "name": "Skin-Absolute Day Ultimate Rejuvenating Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "831ce835-6137-4240-9aa3-bd01a689b813",
+    "brand": "Filorga",
+    "name": "Optim-Eyes Eye Contour Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "9a55f72e-ec80-4bfb-b98e-c599128d66f9",
+    "brand": "Filorga",
+    "name": "Time-Filler Eyes Absolute Eye Correction",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "dce495d1-3fb3-49cb-9afb-36d5a6874194",
+    "brand": "Galenic",
+    "name": "Pur Cleansing Foaming Gel",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6fddae75-bbbf-475d-86d2-6ac92fd1dc5d",
+    "brand": "Galenic",
+    "name": "Argane Nutritive Comforting Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "2c3affa1-7397-4fbc-9263-227640811f78",
+    "brand": "Garancia",
+    "name": "Mille et Une Nuits Anti-Wrinkle Sleeping Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "47b1a3cc-7179-4c29-a46c-36a55030b927",
+    "brand": "Hexomedine",
+    "name": "Transcutanee Antiseptic Solution",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "7f32f710-6798-474f-87c1-174e42d0d77a",
+    "brand": "Klorane",
+    "name": "Anti-Yellowing Silver Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b56075f6-0dda-4b25-a086-b9d64c3f1e29",
+    "brand": "Ialuset",
+    "name": "Hyaluronic Acid Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "41c88b07-5e44-43f4-b018-209e4b7b7fd5",
+    "brand": "Klorane",
+    "name": "Centaury Brightening Eye Patches",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "f0b27b06-4d4c-4f4a-9d04-d2c5900e2408",
+    "brand": "Klorane",
+    "name": "Cica Balm Rescue for Sensitive Scalp",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "9bf2652f-7a45-4fd0-b6f9-1913a570e2c3",
+    "brand": "Klorane",
+    "name": "Smoothing and Soothing Eye Patches with Cornflower",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "bb74db02-75ad-4ae5-a7e6-9f520cdf9baf",
+    "brand": "Klorane",
+    "name": "Mango Butter Conditioner",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "652738ac-cbb2-49aa-b75b-8811f9c1d660",
+    "brand": "La Roche-Posay",
+    "name": "Anthelios Mineral Tinted Sunscreen SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "7b936191-7f4a-49ad-87bb-ae71c7a29d56",
+    "brand": "La Roche-Posay",
+    "name": "Anthelios Pigment Correct SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "55fa75a2-7275-4c4c-98fd-8451367f0c04",
+    "brand": "La Roche-Posay",
+    "name": "Anthelios UV Mune 400 Invisible Fluid SPF50+",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b69817a7-d686-4f05-b26d-e7566f626f2e",
+    "brand": "La Roche-Posay",
+    "name": "Effaclar Micro-Peeling Purifying Gel",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "96ab4bfe-0674-4bf8-964c-2aa37b668956",
+    "brand": "La Roche-Posay",
+    "name": "Effaclar Adapalene Gel 0.1%",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "52e6333f-1d88-42da-bb4d-f9ac4bb666df",
+    "brand": "La Roche-Posay",
+    "name": "Hyalu B5 Hyaluronic Acid Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "3b7007a4-3f49-453b-9c8e-385b85049f4d",
+    "brand": "La Roche-Posay",
+    "name": "Mela B3 Dark Spot Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c955ccc8-8d08-4a73-b3a3-d6cd155207e5",
+    "brand": "La Roche-Posay",
+    "name": "Lipikar Syndet AP+ Cleansing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "f942ab6c-6baf-4fc5-8118-69d3bc13e1b2",
+    "brand": "La Roche-Posay",
+    "name": "Lipikar Baume AP+M",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "cbb08add-f583-4cdf-8a77-41f1796bbf2c",
+    "brand": "La Roche-Posay",
+    "name": "Pure Niacinamide 10 Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "132b4535-4474-49c7-a4ae-27ed84788080",
+    "brand": "La Rosée",
+    "name": "Cleansing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "67efe4de-c1f7-4f87-9fc2-6408ca026714",
+    "brand": "La Roche-Posay",
+    "name": "Serozinc Mattifying Mist",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "f8a71f3e-876d-421e-99d1-d3ef6a66db41",
+    "brand": "La Roche-Posay",
+    "name": "Toleriane Hydrating Gentle Cleanser",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b92502d7-cd61-4f52-a212-6d01aa780c48",
+    "brand": "La Rosée",
+    "name": "Multi-Purpose Stick SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "e9c8e2ce-aeed-4d38-8554-2774eff06142",
+    "brand": "La Rosée",
+    "name": "Skin Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "37c8139d-9c14-45be-b8c1-6ca8ebccc12b",
+    "brand": "Lierac",
+    "name": "Lumilogie Day & Night Dark-Spot Correction Concentrate",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "bf77d1c8-b9d1-425d-b78a-603729af4afa",
+    "brand": "Lierac",
+    "name": "Hydragenist Moisturizing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "2dd299be-60e6-4254-a9c8-08cf78f97ae4",
+    "brand": "Lierac",
+    "name": "Premium La Crème Voluptueuse",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "936bea99-ca6d-425a-a30b-edf8b12065c0",
+    "brand": "Manucurist",
+    "name": "Green Flash LED Nail Polish",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "a3edf650-e4e3-4406-94f5-62e2ff247b15",
+    "brand": "Marvis",
+    "name": "Smokers Whitening Mint Toothpaste",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "afd1fd38-7cb7-440a-ac43-a56403330110",
+    "brand": "Manucurist",
+    "name": "Active Glow Nail Polish",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "12c1aa1c-4a98-4ed6-8493-9f8d44285297",
+    "brand": "Marvis",
+    "name": "Strong Mint Toothpaste",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c92fd6cf-f753-41e0-9431-15615bdad5d6",
+    "brand": "Mediceutics",
+    "name": "Fluide Solaire SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c4ca12ee-06d6-48f0-a7f3-1bb5735e70ea",
+    "brand": "Mustela",
+    "name": "Cleansing Gel Hair and Body",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "49a324e9-52f4-487f-8ea7-051527edc545",
+    "brand": "Mustela",
+    "name": "Hydra Bébé Body Lotion",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "93bffa78-bee6-4e62-93e7-640f796d1f44",
+    "brand": "Mustela",
+    "name": "Stelatopia Emollient Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "3abcea01-49d6-49e7-b798-e7515bf87858",
+    "brand": "Noreva",
+    "name": "Exfoliac NK Mat Daily Moisturizer",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "acc91fc3-2151-4a3a-b807-9c908185e732",
+    "brand": "Nuxe",
+    "name": "Huile Prodigieuse Florale",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "517e0292-b638-4a5e-b889-819f98a82089",
+    "brand": "Nuxe",
+    "name": "Huile Prodigieuse Or Shimmering Dry Oil",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "71b9e9eb-9894-4092-9b69-4c1a756d3421",
+    "brand": "Nuxe",
+    "name": "Crème Fraîche de Beauté 48h Moisturizer",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "139c391f-9728-4a6a-a58c-065c927ba204",
+    "brand": "Nuxe",
+    "name": "Merveillance Lift Firming Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "24d01a06-1080-4739-a1e6-1f79883ec9fb",
+    "brand": "Nuxe",
+    "name": "Rêve de Miel Gentle Face Cleanser",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "3dfb3178-04c5-4c61-87a4-ec5c50f0b65a",
+    "brand": "Panier des Sens",
+    "name": "Mediterranean Olive Body Lotion",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c432b822-1abc-4da9-8527-14fc317fe831",
+    "brand": "Nuxe",
+    "name": "Rêve de Miel Honey Lip Oil",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "0a192495-10bf-432b-af21-f17d768eef3c",
+    "brand": "Panier des Sens",
+    "name": "Provence Rose Hand Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "7f5b218b-4bb3-482d-b4e9-a166a879b6ad",
+    "brand": "Patyka",
+    "name": "Lift Sculpt Firming Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6a70fe00-be9a-4050-80d3-76dc9cfa3828",
+    "brand": "Payot",
+    "name": "Crème No.2 Soothing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "8ce0cdd3-0a1f-49f8-9270-deabe4ac2daf",
+    "brand": "Patyka",
+    "name": "Pure Radiance Brightening Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "5a25289d-bee6-47cd-8e01-781fa41d1114",
+    "brand": "Puressentiel",
+    "name": "Muscles & Joints Cryo Pure Roller",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "70fadd63-ce29-420c-809f-6e5c5a5029d8",
+    "brand": "Payot",
+    "name": "Pâte Grise The Original Purifying Treatment",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "ee415e5a-a188-431b-9dd1-9f67c540f3a0",
+    "brand": "Phyto",
+    "name": "Phytodefrisant Anti-Frizz Botanical Blow-Dry Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "92a0bb47-6f0b-48db-a3ea-f8a32f397799",
+    "brand": "Phyto",
+    "name": "Phytocyane Densifying Treatment",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "041e1549-fd61-480e-bcf4-675b0067a391",
+    "brand": "Roger & Gallet",
+    "name": "Fleur d'Osmanthus Soap",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "94d2197f-8b28-419c-a1c3-7b3719549e92",
+    "brand": "Puressentiel",
+    "name": "Respiratory Decongestant Inhaler",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "62c7abfc-5064-4c02-a38c-65e052626477",
+    "brand": "Roger & Gallet",
+    "name": "Bois d'Orange Eau Fraiche",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "99b17aa1-d313-43f3-b049-4fa910e78bf1",
+    "brand": "René Furterer",
+    "name": "Karité Hydra Hydrating Mask",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "d0d1389a-9a4e-4da6-9089-9d2c990ca11f",
+    "brand": "SVR",
+    "name": "Hydraliane Riche",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "0c13c736-9574-4e03-9bae-3d8810f247d1",
+    "brand": "SVR",
+    "name": "Ampoule Vitamin C Anti-Fatigue",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "25314fbe-96b7-46b0-abb8-5c6bfa18e7de",
+    "brand": "SVR",
+    "name": "Sebiaclear Active",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "dc518c54-c291-44d8-8c2a-3ed22a09dbe1",
+    "brand": "SVR",
+    "name": "Sebiaclear Mat + Pores",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "cf93ceeb-8347-4782-8dfd-8281ef8732b4",
+    "brand": "Talika",
+    "name": "Lipocils Eyelash Conditioning Gel",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "8f19c053-d71e-471c-b16d-db08302a5638",
+    "brand": "SVR",
+    "name": "Topialyse Baume Protect+",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "488c65fb-b252-4657-bba4-1edcf035c6cb",
+    "brand": "Topicrem",
+    "name": "Hydra+ Light Moisturizing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "abb36556-7c1f-4da0-9536-1ed129773052",
+    "brand": "Talika",
+    "name": "Eye Therapy Patch",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "69bb5649-bf49-48d5-b26e-74eaea32e34c",
+    "brand": "Uriage",
+    "name": "Bariéderm Cica Repairing Lip Stick",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "d8adda03-ec9a-4a90-ada7-2078b9c4436b",
+    "brand": "Uriage",
+    "name": "DS Hair Soothing Cleansing Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c56335ce-965c-490e-b772-0cba3a28f543",
+    "brand": "Uriage",
+    "name": "Eau Thermale Water Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "588d6fe6-dc5a-465b-b484-4b45e4f4506b",
+    "brand": "Topicrem",
+    "name": "Ultra-Moisturizing Body Milk",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "305aacc0-d274-42d6-8107-7a8a245d0e53",
+    "brand": "Vichy",
+    "name": "Capital Soleil UV Age Daily SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "8777be07-2c7d-455a-bbe8-0b8546b01976",
+    "brand": "Vichy",
+    "name": "Dercos Anti-Dandruff Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "d43740e0-bfad-47cb-a1bf-43729e1560ea",
+    "brand": "Vichy",
+    "name": "Deodorant 24H Hypoallergenic Dry Touch",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "e246f3fd-eb13-4832-b834-24f28f01e645",
+    "brand": "Vichy",
+    "name": "LiftActiv Supreme Day Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "9506f4dc-9d46-4fae-9fec-201879788c60",
+    "brand": "Vichy",
+    "name": "LiftActiv Vitamin C Brightening Skin Corrector",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "ad787012-368a-4df7-b4c0-22124d10340e",
+    "brand": "Vichy",
+    "name": "Mineral 89 Probiotic Fractions Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "a7557382-2be6-49fe-a5e0-55bf73d7191f",
+    "brand": "Weleda",
+    "name": "Skin Food Lip Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "54c996eb-09ce-4eb8-a86d-1578c785a9f5",
+    "brand": "Voltaren",
+    "name": "Actigo Pain Relief Gel",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b699d89a-02d6-460c-bba4-9fefd42a3360",
+    "brand": "Weleda",
+    "name": "Skin Food Original",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "792926dd-142e-4de8-a756-ac78928b76e0",
+    "brand": "Yon-Ka",
+    "name": "Lotion Yon-Ka Toner",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "4007cfd2-5a25-4e00-b43f-4a0ef1196641",
+    "brand": "Avène",
+    "name": "Tolerance Control Soothing Skin Recovery Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "7dcb0e83-e232-4d9e-86cc-a5c4100de7a2",
+    "brand": "Bioderma",
+    "name": "Atoderm Shower Oil",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "a95639f3-646a-4c7c-87ea-2d286eb128d4",
+    "brand": "Avène",
+    "name": "DermAbsolu Nutrition Nourishing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "ff85011d-0d8d-480b-9789-76207239c65e",
+    "brand": "Bioderma",
+    "name": "Hydrabio Tonique Hydrating Toner",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6e7e8172-1191-40fa-a42b-03e87dbdc7a1",
+    "brand": "Bioderma",
+    "name": "Photoderm Nude Touch SPF50+",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b7ca2e8a-8c16-4893-be88-1025e2032316",
+    "brand": "Bioderma",
+    "name": "Sebium Pore Refiner",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "1b40e02d-dcf8-42c0-ba25-4e89d097555c",
+    "brand": "Bioderma",
+    "name": "Sensibio Defensive Active Care",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "35f37ede-223a-4d79-b294-368f6693f917",
+    "brand": "Biologique Recherche",
+    "name": "Lotion P50 Original",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "f918bbe1-7957-490d-98d1-e9b037cfbb99",
+    "brand": "Biotherm",
+    "name": "Aquasource Hyalu Plump Gel",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "fda00a0e-8304-4de2-9100-3724421b381f",
+    "brand": "Biafine",
+    "name": "Biafine Emulsion",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "a81863ab-b9f1-4d8a-bc94-700877d5125f",
+    "brand": "Boiron",
+    "name": "Homéoplasmine Multi-Use Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "a41d2386-c723-4c21-a6d1-918a2e40645c",
+    "brand": "Biotherm",
+    "name": "Life Plankton Essence",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6d39bad1-a931-483d-b7af-31e2a8c8e94f",
+    "brand": "By Terry",
+    "name": "Baume de Rose Lip Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "03eecd1d-371e-4e00-83f8-ab4e19b10b87",
+    "brand": "Caudalie",
+    "name": "Grape Water Mist",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "ad9a2d30-6848-4b41-9059-b4fdc18e9209",
+    "brand": "Caudalie",
+    "name": "Resveratrol-Lift Firming Cashmere Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "30d95a0b-9139-4dcc-bfb3-c45926408bb6",
+    "brand": "Caudalie",
+    "name": "Instant Detox Mask",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "4c86f7c5-fbe4-4314-8067-8a05959a843d",
+    "brand": "Caudalie",
+    "name": "Vinoperfect Brightening Eye Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "f1eb1ec3-81ac-4c11-8d53-2ae9e19b09ae",
+    "brand": "Caudalie",
+    "name": "Vinopure Pore Purifying Gel Cleanser",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "d3f6bf52-264e-4825-9a93-f614fcb81318",
+    "brand": "Caudalie",
+    "name": "Vinopure Spot Solution",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6e12aaac-aaaf-42a7-a3c5-42d0a51f73ed",
+    "brand": "Caudalie",
+    "name": "Vinosun Invisible High Protection Stick SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c9e33067-3bd6-415f-b490-ff85447adfbf",
+    "brand": "Caudalie",
+    "name": "Vinosun Protect SPF50 Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6136abd0-7bfe-4876-8c10-ec65d5aa4549",
+    "brand": "Christophe Robin",
+    "name": "Cleansing Purifying Sea Salt Scrub",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "52e0c1c1-369f-40b8-ad2e-bcf60a74afc8",
+    "brand": "Christophe Robin",
+    "name": "Cleansing Volumizing Paste with Pure Rassoul Clay",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "66cf0cae-59e4-4556-bf38-c82c3137fbc0",
+    "brand": "Clarins",
+    "name": "Beauty Flash Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c7e043fe-d858-4946-8559-2b89dc2db8f2",
+    "brand": "Clarins",
+    "name": "Double Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b29cf94d-5ba7-4a9f-9cfc-94cc17ffdb83",
+    "brand": "Cosmetics 27",
+    "name": "Baume 27 Repairing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "e9b919e6-f09d-4a8a-b219-fe4a4bbc6a27",
+    "brand": "Darphin",
+    "name": "Niaouli Aromatic Care",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b05a38cb-e435-414c-b60a-36dff2605811",
+    "brand": "Darphin",
+    "name": "Intral Redness Relief Soothing Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "cddaef51-4bc7-42a5-80fb-815d395f0fd7",
+    "brand": "Ducray",
+    "name": "Anaphase+ Anti-Hair Loss Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "8dc126a4-0895-4031-9f40-2e8d6a2d61c6",
+    "brand": "Ducray",
+    "name": "Kelual DS Anti-Recurrence Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "4c59f82a-2ede-4b96-88a4-272cc9b8d4cb",
+    "brand": "Embryolisse",
+    "name": "Filaderme Émulsion",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "77045940-cb13-437b-9e2b-ca711664c3f3",
+    "brand": "Ducray",
+    "name": "Squanorm Anti-Dandruff Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "3594a644-d27e-4c7e-a0dd-9deddce6cbe3",
+    "brand": "Embryolisse",
+    "name": "Cicalish Lip Care",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "5781fb78-d7d8-46ff-985e-c896a95c200d",
+    "brand": "Embryolisse",
+    "name": "Lait-Crème Concentré",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "949165bc-6ece-43f9-b32e-85e0535bb681",
+    "brand": "Embryolisse",
+    "name": "Lait-Crème Concentré Anti-Age",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "2992d4b0-5511-4f6a-bc84-f428f97f8883",
+    "brand": "Embryolisse",
+    "name": "Lait-Crème Sensitive",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "2d34b146-ac3e-4b99-a2e2-95a44700dc22",
+    "brand": "Eucerin",
+    "name": "Aquaphor Soothing Skin Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "af540509-f60e-4de2-92b9-607a1f8e1937",
+    "brand": "Filorga",
+    "name": "Meso-Mask Anti-Wrinkle Lightening Mask",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "02c687c0-455d-4654-ab0f-450cf7ac4312",
+    "brand": "Eucerin",
+    "name": "Replenishing Skin Relief Face Cream with 5% Urea",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "4769214a-7bbb-4c01-a2e0-7f58a4f04c85",
+    "brand": "Filorga",
+    "name": "NCEF-Reverse Regenerating Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "921a89dd-8c09-4908-908c-b341d04f060f",
+    "brand": "Filorga",
+    "name": "Hydra-Hyal Hydrating Plumping Concentrated Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6ee5bda0-0659-4f01-b8f3-4a9d6b756b12",
+    "brand": "Filorga",
+    "name": "Skin-Absolute Day Ultimate Rejuvenating Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "831ce835-6137-4240-9aa3-bd01a689b813",
+    "brand": "Filorga",
+    "name": "Optim-Eyes Eye Contour Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "9a55f72e-ec80-4bfb-b98e-c599128d66f9",
+    "brand": "Filorga",
+    "name": "Time-Filler Eyes Absolute Eye Correction",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6fddae75-bbbf-475d-86d2-6ac92fd1dc5d",
+    "brand": "Galenic",
+    "name": "Argane Nutritive Comforting Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "dce495d1-3fb3-49cb-9afb-36d5a6874194",
+    "brand": "Galenic",
+    "name": "Pur Cleansing Foaming Gel",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "47b1a3cc-7179-4c29-a46c-36a55030b927",
+    "brand": "Hexomedine",
+    "name": "Transcutanee Antiseptic Solution",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b56075f6-0dda-4b25-a086-b9d64c3f1e29",
+    "brand": "Ialuset",
+    "name": "Hyaluronic Acid Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "2c3affa1-7397-4fbc-9263-227640811f78",
+    "brand": "Garancia",
+    "name": "Mille et Une Nuits Anti-Wrinkle Sleeping Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "7f32f710-6798-474f-87c1-174e42d0d77a",
+    "brand": "Klorane",
+    "name": "Anti-Yellowing Silver Shampoo",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "bb74db02-75ad-4ae5-a7e6-9f520cdf9baf",
+    "brand": "Klorane",
+    "name": "Mango Butter Conditioner",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "41c88b07-5e44-43f4-b018-209e4b7b7fd5",
+    "brand": "Klorane",
+    "name": "Centaury Brightening Eye Patches",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "f0b27b06-4d4c-4f4a-9d04-d2c5900e2408",
+    "brand": "Klorane",
+    "name": "Cica Balm Rescue for Sensitive Scalp",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "652738ac-cbb2-49aa-b75b-8811f9c1d660",
+    "brand": "La Roche-Posay",
+    "name": "Anthelios Mineral Tinted Sunscreen SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "9bf2652f-7a45-4fd0-b6f9-1913a570e2c3",
+    "brand": "Klorane",
+    "name": "Smoothing and Soothing Eye Patches with Cornflower",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "55fa75a2-7275-4c4c-98fd-8451367f0c04",
+    "brand": "La Roche-Posay",
+    "name": "Anthelios UV Mune 400 Invisible Fluid SPF50+",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "7b936191-7f4a-49ad-87bb-ae71c7a29d56",
+    "brand": "La Roche-Posay",
+    "name": "Anthelios Pigment Correct SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b69817a7-d686-4f05-b26d-e7566f626f2e",
+    "brand": "La Roche-Posay",
+    "name": "Effaclar Micro-Peeling Purifying Gel",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "96ab4bfe-0674-4bf8-964c-2aa37b668956",
+    "brand": "La Roche-Posay",
+    "name": "Effaclar Adapalene Gel 0.1%",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "52e6333f-1d88-42da-bb4d-f9ac4bb666df",
+    "brand": "La Roche-Posay",
+    "name": "Hyalu B5 Hyaluronic Acid Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "f942ab6c-6baf-4fc5-8118-69d3bc13e1b2",
+    "brand": "La Roche-Posay",
+    "name": "Lipikar Baume AP+M",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c955ccc8-8d08-4a73-b3a3-d6cd155207e5",
+    "brand": "La Roche-Posay",
+    "name": "Lipikar Syndet AP+ Cleansing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "3b7007a4-3f49-453b-9c8e-385b85049f4d",
+    "brand": "La Roche-Posay",
+    "name": "Mela B3 Dark Spot Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "67efe4de-c1f7-4f87-9fc2-6408ca026714",
+    "brand": "La Roche-Posay",
+    "name": "Serozinc Mattifying Mist",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "cbb08add-f583-4cdf-8a77-41f1796bbf2c",
+    "brand": "La Roche-Posay",
+    "name": "Pure Niacinamide 10 Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "f8a71f3e-876d-421e-99d1-d3ef6a66db41",
+    "brand": "La Roche-Posay",
+    "name": "Toleriane Hydrating Gentle Cleanser",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "b92502d7-cd61-4f52-a212-6d01aa780c48",
+    "brand": "La Rosée",
+    "name": "Multi-Purpose Stick SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "132b4535-4474-49c7-a4ae-27ed84788080",
+    "brand": "La Rosée",
+    "name": "Cleansing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "e9c8e2ce-aeed-4d38-8554-2774eff06142",
+    "brand": "La Rosée",
+    "name": "Skin Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "bf77d1c8-b9d1-425d-b78a-603729af4afa",
+    "brand": "Lierac",
+    "name": "Hydragenist Moisturizing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "2dd299be-60e6-4254-a9c8-08cf78f97ae4",
+    "brand": "Lierac",
+    "name": "Premium La Crème Voluptueuse",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "afd1fd38-7cb7-440a-ac43-a56403330110",
+    "brand": "Manucurist",
+    "name": "Active Glow Nail Polish",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "37c8139d-9c14-45be-b8c1-6ca8ebccc12b",
+    "brand": "Lierac",
+    "name": "Lumilogie Day & Night Dark-Spot Correction Concentrate",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "a3edf650-e4e3-4406-94f5-62e2ff247b15",
+    "brand": "Marvis",
+    "name": "Smokers Whitening Mint Toothpaste",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "936bea99-ca6d-425a-a30b-edf8b12065c0",
+    "brand": "Manucurist",
+    "name": "Green Flash LED Nail Polish",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "12c1aa1c-4a98-4ed6-8493-9f8d44285297",
+    "brand": "Marvis",
+    "name": "Strong Mint Toothpaste",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c92fd6cf-f753-41e0-9431-15615bdad5d6",
+    "brand": "Mediceutics",
+    "name": "Fluide Solaire SPF50",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "49a324e9-52f4-487f-8ea7-051527edc545",
+    "brand": "Mustela",
+    "name": "Hydra Bébé Body Lotion",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c4ca12ee-06d6-48f0-a7f3-1bb5735e70ea",
+    "brand": "Mustela",
+    "name": "Cleansing Gel Hair and Body",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "3abcea01-49d6-49e7-b798-e7515bf87858",
+    "brand": "Noreva",
+    "name": "Exfoliac NK Mat Daily Moisturizer",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "93bffa78-bee6-4e62-93e7-640f796d1f44",
+    "brand": "Mustela",
+    "name": "Stelatopia Emollient Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "acc91fc3-2151-4a3a-b807-9c908185e732",
+    "brand": "Nuxe",
+    "name": "Huile Prodigieuse Florale",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "71b9e9eb-9894-4092-9b69-4c1a756d3421",
+    "brand": "Nuxe",
+    "name": "Crème Fraîche de Beauté 48h Moisturizer",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "139c391f-9728-4a6a-a58c-065c927ba204",
+    "brand": "Nuxe",
+    "name": "Merveillance Lift Firming Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "517e0292-b638-4a5e-b889-819f98a82089",
+    "brand": "Nuxe",
+    "name": "Huile Prodigieuse Or Shimmering Dry Oil",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "c432b822-1abc-4da9-8527-14fc317fe831",
+    "brand": "Nuxe",
+    "name": "Rêve de Miel Honey Lip Oil",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "24d01a06-1080-4739-a1e6-1f79883ec9fb",
+    "brand": "Nuxe",
+    "name": "Rêve de Miel Gentle Face Cleanser",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "3dfb3178-04c5-4c61-87a4-ec5c50f0b65a",
+    "brand": "Panier des Sens",
+    "name": "Mediterranean Olive Body Lotion",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "0a192495-10bf-432b-af21-f17d768eef3c",
+    "brand": "Panier des Sens",
+    "name": "Provence Rose Hand Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "8ce0cdd3-0a1f-49f8-9270-deabe4ac2daf",
+    "brand": "Patyka",
+    "name": "Pure Radiance Brightening Serum",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "70fadd63-ce29-420c-809f-6e5c5a5029d8",
+    "brand": "Payot",
+    "name": "Pâte Grise The Original Purifying Treatment",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "6a70fe00-be9a-4050-80d3-76dc9cfa3828",
+    "brand": "Payot",
+    "name": "Crème No.2 Soothing Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "7f5b218b-4bb3-482d-b4e9-a166a879b6ad",
+    "brand": "Patyka",
+    "name": "Lift Sculpt Firming Cream",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "92a0bb47-6f0b-48db-a3ea-f8a32f397799",
+    "brand": "Phyto",
+    "name": "Phytocyane Densifying Treatment",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "94d2197f-8b28-419c-a1c3-7b3719549e92",
+    "brand": "Puressentiel",
+    "name": "Respiratory Decongestant Inhaler",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "ee415e5a-a188-431b-9dd1-9f67c540f3a0",
+    "brand": "Phyto",
+    "name": "Phytodefrisant Anti-Frizz Botanical Blow-Dry Balm",
+    "ok": false,
+    "reason": "no_image_found"
+  },
+  {
+    "id": "5a25289d-bee6-47cd-8e01-781fa41d1114",
+    "brand": "Puressentiel",
+    "name": "Muscles & Joints Cryo Pure Roller",
+    "ok": false,
+    "reason": "no_image_found"
+  }
+]

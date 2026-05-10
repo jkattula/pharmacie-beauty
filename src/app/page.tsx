@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { SearchBar } from "@/components/features/search-bar";
 import { CategoryChips } from "@/components/features/category-chips";
 import { ProductGrid } from "@/components/features/product-grid";
+import { SiteHeader } from "@/components/features/site-header";
 import { Loader2 } from "lucide-react";
 import type { ProductCard, CuratedCategory, CategoryCountsResponse } from "@/types";
 
@@ -73,30 +74,16 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-stone">
-        <div className="max-w-lg mx-auto px-4 py-4">
-          {/* App Title */}
-          <div className="text-center mb-4">
-            <h1 className="font-serif text-2xl font-semibold text-foreground">
-              Pharmacie Beauty
-            </h1>
-            <p className="text-sm text-muted-foreground">
-              Your French pharmacy guide
-            </p>
-          </div>
-
-          {/* Search Bar */}
-          <SearchBar
-            onSearch={handleSearch}
-            placeholder="Anti-aging eye cream, rosacea care..."
-            isLoading={isLoading}
-          />
-        </div>
-      </header>
+      <SiteHeader>
+        <SearchBar
+          onSearch={handleSearch}
+          placeholder="Anti-aging eye cream, rosacea care..."
+          isLoading={isLoading}
+        />
+      </SiteHeader>
 
       {/* Main Content */}
-      <main className="max-w-lg mx-auto px-4 py-4">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
         {/* Category Chips */}
         <div className="mb-6">
           <CategoryChips
@@ -136,11 +123,17 @@ export default function HomePage() {
       </main>
 
       {/* Footer */}
-      <footer className="max-w-lg mx-auto px-4 py-8 text-center">
+      <footer className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
         <p className="text-xs text-muted-foreground">
           Prices are approximate. Product availability may vary.
           <br />
           Not medical advice. Consult a dermatologist for skin concerns.
+          <br />
+          Some links are affiliate links. If you buy through them, I may earn a
+          small commission at no extra cost to you.
+        </p>
+        <p className="text-xs text-muted-foreground mt-4">
+          &copy; 2026 Pharmacie Beauty. Built by Jennifer Kattula.
         </p>
       </footer>
     </div>

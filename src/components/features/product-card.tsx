@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Star, MapPin, Sparkles, Tag, Check, AlertTriangle, X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { cn, formatPriceEur, formatPriceUsd, calculateSavings, getPlaceholderImage } from "@/lib/utils";
+import { cn, formatPriceEur, formatPriceUsd, calculateSavings, getProductImageUrl } from "@/lib/utils";
 import type { ProductCard as ProductCardType } from "@/types";
 
 interface ProductCardProps {
@@ -13,7 +13,10 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product, onClick, className }: ProductCardProps) {
-  const savings = calculateSavings(product.priceEurMin, product.priceUsdEstimate);
+  const notSoldInUs = product.availabilityStatus === "not_available";
+  const savings = notSoldInUs
+    ? null
+    : calculateSavings(product.priceEurMin, product.priceUsdEstimate);
 
   // Determine which badges to show (max 2 to avoid clutter)
   const badges: Array<{ type: string; icon: React.ElementType; variant: "cult" | "trending" | "france" | "deal" }> = [];
@@ -58,7 +61,7 @@ export function ProductCard({ product, onClick, className }: ProductCardProps) {
       {/* Image Container */}
       <div className="relative aspect-square bg-stone-light overflow-hidden">
         <Image
-          src={product.imageUrl || getPlaceholderImage(product.name)}
+          src={getProductImageUrl(product.imageUrl, product.name)}
           alt={product.name}
           fill
           sizes="(max-width: 768px) 50vw, 33vw"
@@ -111,13 +114,15 @@ export function ProductCard({ product, onClick, className }: ProductCardProps) {
 
           {/* US Price & Availability */}
           <div className="flex items-center justify-between text-xs text-muted-foreground">
-            <span>{formatPriceUsd(product.priceUsdEstimate)}</span>
+            <span>
+              {notSoldInUs ? "Not sold in US" : formatPriceUsd(product.priceUsdEstimate)}
+            </span>
             {product.availabilityStatus && (
               <span className="flex items-center gap-1">
                 <AvailabilityIcon />
                 <span>
                   {product.availabilityStatus === "same_formula" && "In US"}
-                  {product.availabilityStatus === "reformulated" && "Reformulated"}
+                  {product.availabilityStatus === "reformulated" && "Different US formula"}
                   {product.availabilityStatus === "not_available" && "France Only"}
                 </span>
               </span>

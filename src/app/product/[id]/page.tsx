@@ -18,7 +18,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
-import { cn, formatPriceEur, formatPriceUsd, calculateSavings, getPlaceholderImage } from "@/lib/utils";
+import { cn, formatPriceEur, formatPriceUsd, calculateSavings, getProductImageUrl } from "@/lib/utils";
 import type { ProductWithDetails } from "@/types";
 import { AVAILABILITY_STATUS } from "@/types";
 
@@ -55,10 +55,13 @@ export default function ProductDetailPage() {
     );
   }
 
-  const savings = calculateSavings(
-    product.price?.priceEurMin ?? null,
-    product.price?.priceUsdEstimate ?? null
-  );
+  const notSoldInUs = product.usAvailability?.availabilityStatus === "not_available";
+  const savings = notSoldInUs
+    ? null
+    : calculateSavings(
+        product.price?.priceEurMin ?? null,
+        product.price?.priceUsdEstimate ?? null
+      );
 
   const availabilityInfo = product.usAvailability?.availabilityStatus
     ? AVAILABILITY_STATUS[product.usAvailability.availabilityStatus]
@@ -68,7 +71,7 @@ export default function ProductDetailPage() {
     <div className="min-h-screen bg-background pb-24">
       {/* Header */}
       <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-stone">
-        <div className="max-w-lg mx-auto px-4 py-3 flex items-center gap-3">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center gap-3">
           <Button
             variant="ghost"
             size="icon"
@@ -87,11 +90,11 @@ export default function ProductDetailPage() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-lg mx-auto">
+      <main className="max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:gap-8 lg:px-8 lg:py-6">
         {/* Product Image */}
-        <div className="relative aspect-square bg-stone-light">
+        <div className="relative aspect-square bg-stone-light lg:rounded-lg lg:overflow-hidden lg:sticky lg:top-20 lg:self-start">
           <Image
-            src={product.imageUrl || getPlaceholderImage(product.name)}
+            src={getProductImageUrl(product.imageUrl, product.name)}
             alt={product.name}
             fill
             sizes="100vw"
@@ -129,7 +132,7 @@ export default function ProductDetailPage() {
         </div>
 
         {/* Product Info */}
-        <div className="px-4 py-6 space-y-6">
+        <div className="px-4 py-6 space-y-6 lg:px-0 lg:py-0">
           {/* Title & Brand */}
           <div>
             <p className="text-sm font-serif text-primary uppercase tracking-wide">
@@ -157,15 +160,26 @@ export default function ProductDetailPage() {
                   In French pharmacies
                 </p>
               </div>
-              {savings && savings > 0 && (
+              {notSoldInUs ? (
                 <div className="text-right">
-                  <p className="text-lg font-semibold text-green-600">
-                    Save ~{savings}%
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    vs {formatPriceUsd(product.price?.priceUsdEstimate ?? null)}
+                  <p className="text-sm font-medium text-muted-foreground">
+                    Not sold in US
                   </p>
                 </div>
+              ) : (
+                savings && savings > 0 && (
+                  <div className="text-right">
+                    <p className="text-lg font-semibold text-green-600">
+                      Save ~{savings}%
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      vs {formatPriceUsd(product.price?.priceUsdEstimate ?? null)}
+                      {product.usAvailability?.availabilityStatus === "reformulated" && (
+                        <span className="block">(different US formula)</span>
+                      )}
+                    </p>
+                  </div>
+                )
               )}
             </div>
           </div>
@@ -248,24 +262,41 @@ export default function ProductDetailPage() {
               <h3 className="font-serif text-lg font-semibold mb-3">
                 Key Ingredients
               </h3>
-              <div className="flex flex-wrap gap-2">
+              <ul className="space-y-3">
                 {product.ingredients.map((ingredient) => (
-                  <Badge
-                    key={ingredient.id}
-                    variant={ingredient.euOnlyFlag ? "eu" : "secondary"}
-                    className="text-sm py-1.5"
-                  >
-                    {ingredient.euOnlyFlag && (
-                      <Beaker className="h-3 w-3 mr-1" />
-                    )}
-                    {ingredient.name}
-                  </Badge>
+                  <li key={ingredient.id} className="flex gap-3">
+                    <div
+                      className={cn(
+                        "flex-shrink-0 mt-0.5 w-6 h-6 rounded-full flex items-center justify-center",
+                        ingredient.euOnlyFlag
+                          ? "bg-primary/15 text-primary"
+                          : "bg-stone-light text-foreground/60"
+                      )}
+                    >
+                      <Beaker className="h-3.5 w-3.5" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className="font-medium text-sm flex items-center gap-2 flex-wrap">
+                        {ingredient.name}
+                        {ingredient.euOnlyFlag && (
+                          <Badge variant="eu" className="text-[10px] px-1.5 py-0">
+                            EU-only
+                          </Badge>
+                        )}
+                      </p>
+                      {ingredient.notes && (
+                        <p className="text-sm text-muted-foreground leading-snug mt-0.5">
+                          {ingredient.notes}
+                        </p>
+                      )}
+                    </div>
+                  </li>
                 ))}
-              </div>
+              </ul>
               {product.ingredients.some((i) => i.euOnlyFlag) && (
-                <p className="text-xs text-muted-foreground mt-2">
+                <p className="text-xs text-muted-foreground mt-3">
                   <Beaker className="h-3 w-3 inline mr-1" />
-                  EU-only ingredient (may not be available in US formulations)
+                  EU-only ingredients may not appear in US formulations.
                 </p>
               )}
             </div>
@@ -289,7 +320,7 @@ export default function ProductDetailPage() {
       </main>
 
       {/* Footer Disclaimer */}
-      <footer className="max-w-lg mx-auto px-4 py-4 text-center">
+      <footer className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center">
         <p className="text-xs text-muted-foreground">
           Prices are approximate. Product availability may vary.
           <br />
@@ -305,7 +336,7 @@ function ProductDetailSkeleton({ onBack }: { onBack: () => void }) {
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-stone">
-        <div className="max-w-lg mx-auto px-4 py-3 flex items-center gap-3">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center gap-3">
           <Button variant="ghost" size="icon" onClick={onBack} className="rounded-full">
             <ArrowLeft className="h-5 w-5" />
           </Button>
@@ -316,8 +347,8 @@ function ProductDetailSkeleton({ onBack }: { onBack: () => void }) {
         </div>
       </header>
 
-      <main className="max-w-lg mx-auto">
-        <Skeleton className="aspect-square" />
+      <main className="max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:gap-8 lg:px-8 lg:py-6">
+        <Skeleton className="aspect-square lg:rounded-lg" />
         <div className="px-4 py-6 space-y-6">
           <div>
             <Skeleton className="h-4 w-24 mb-2" />
