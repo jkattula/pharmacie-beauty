@@ -44,6 +44,8 @@ export const products = pgTable("products", {
   tiktokTrendingFlag: boolean("tiktok_trending_flag").default(false),
   dealFlag: boolean("deal_flag").default(false),
   imageUrl: text("image_url"),
+  shopRetailer: text("shop_retailer"),
+  shopUrl: text("shop_url"),
   createdAt: timestamp("created_at").defaultNow(),
   updatedAt: timestamp("updated_at").defaultNow(),
 });

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Star, MapPin, Sparkles, Tag, Check, AlertTriangle, X } from "lucide-react";
+import { Star, MapPin, Sparkles, Tag, Check, AlertTriangle, X, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { cn, formatPriceEur, formatPriceUsd, calculateSavings, getProductImageUrl } from "@/lib/utils";
 import type { ProductCard as ProductCardType } from "@/types";
@@ -128,6 +128,20 @@ export function ProductCard({ product, onClick, className }: ProductCardProps) {
               </span>
             )}
           </div>
+
+          {/* Buy link */}
+          {product.shopUrl && product.shopRetailer && (
+            <a
+              href={product.shopUrl}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              onClick={(e) => e.stopPropagation()}
+              className="mt-2 flex items-center justify-center gap-1 text-xs font-medium text-primary hover:text-primary/80 hover:underline"
+            >
+              Buy on {product.shopRetailer}
+              <ExternalLink className="h-3 w-3" />
+            </a>
+          )}
         </div>
       </div>
     </article>

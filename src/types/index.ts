@@ -35,6 +35,8 @@ export interface ProductCard {
   tiktokTrendingFlag: boolean;
   dealFlag: boolean;
   availabilityStatus: "same_formula" | "reformulated" | "not_available" | null;
+  shopRetailer: string | null;
+  shopUrl: string | null;
 }
 
 // ============================================

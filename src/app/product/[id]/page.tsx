@@ -13,7 +13,8 @@ import {
   AlertTriangle,
   X,
   Beaker,
-  Info
+  Info,
+  ExternalLink
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -183,6 +184,19 @@ export default function ProductDetailPage() {
               )}
             </div>
           </div>
+
+          {/* Buy CTA */}
+          {product.shopUrl && product.shopRetailer && (
+            <a
+              href={product.shopUrl}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="flex items-center justify-center gap-2 w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full font-medium py-3 px-6 transition-colors"
+            >
+              Buy on {product.shopRetailer}
+              <ExternalLink className="h-4 w-4" />
+            </a>
+          )}
 
           {/* Description */}
           <div>

@@ -25,6 +25,8 @@ export async function getAllProductCards(): Promise<ProductCard[]> {
       priceEurMax: prices.priceEurMax,
       priceUsdEstimate: prices.priceUsdEstimate,
       availabilityStatus: usAvailability.availabilityStatus,
+      shopRetailer: products.shopRetailer,
+      shopUrl: products.shopUrl,
     })
     .from(products)
     .innerJoin(brands, eq(products.brandId, brands.id))
@@ -86,6 +88,8 @@ export async function getProductsByCategory(category: CuratedCategory): Promise<
       priceEurMax: prices.priceEurMax,
       priceUsdEstimate: prices.priceUsdEstimate,
       availabilityStatus: usAvailability.availabilityStatus,
+      shopRetailer: products.shopRetailer,
+      shopUrl: products.shopUrl,
     })
     .from(products)
     .innerJoin(brands, eq(products.brandId, brands.id))
@@ -127,6 +131,8 @@ export async function searchProducts(query: string): Promise<ProductCard[]> {
       priceEurMax: prices.priceEurMax,
       priceUsdEstimate: prices.priceUsdEstimate,
       availabilityStatus: usAvailability.availabilityStatus,
+      shopRetailer: products.shopRetailer,
+      shopUrl: products.shopUrl,
     })
     .from(products)
     .innerJoin(brands, eq(products.brandId, brands.id))

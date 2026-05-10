@@ -66,6 +66,8 @@ export async function GET(request: NextRequest) {
           tiktokTrendingFlag: p.tiktokTrendingFlag,
           dealFlag: p.dealFlag,
           availabilityStatus: p.availabilityStatus,
+          shopRetailer: null,
+          shopUrl: null,
         }));
 
         // Dedupe AI products against DB products
@@ -117,6 +119,8 @@ export async function GET(request: NextRequest) {
           tiktokTrendingFlag: p.tiktokTrendingFlag,
           dealFlag: p.dealFlag,
           availabilityStatus: p.availabilityStatus,
+          shopRetailer: null,
+          shopUrl: null,
         }));
 
         const normalize = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
