@@ -1,0 +1,740 @@
+[
+  {
+    "filename": "avene_hydrance_rich_hydrating_cream.png",
+    "ok": false,
+    "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n",
+    "at": "2026-05-11T17:45:40.585Z"
+  },
+  {
+    "filename": "avene_hydrance_rich_hydrating_cream.png",
+    "ok": true,
+    "bytes": 1190582,
+    "at": "2026-05-12T09:38:44.836Z"
+  },
+  {
+    "filename": "avene_mineral_sunscreen_fluid_spf50.png",
+    "ok": true,
+    "bytes": 1049595,
+    "at": "2026-05-12T09:38:51.635Z"
+  },
+  {
+    "filename": "avene_tolerance_control_soothing_skin_recovery_cream.png",
+    "ok": true,
+    "bytes": 1074609,
+    "at": "2026-05-12T09:38:57.980Z"
+  },
+  {
+    "filename": "biafine_biafine_emulsion.png",
+    "ok": true,
+    "bytes": 1043441,
+    "at": "2026-05-12T09:39:04.284Z"
+  },
+  {
+    "filename": "bioderma_atoderm_shower_oil.png",
+    "ok": true,
+    "bytes": 1109895,
+    "at": "2026-05-12T09:39:11.477Z"
+  },
+  {
+    "filename": "bioderma_hydrabio_tonique_hydrating_toner.png",
+    "ok": true,
+    "bytes": 1213937,
+    "at": "2026-05-12T09:39:23.690Z"
+  },
+  {
+    "filename": "bioderma_photoderm_nude_touch_spf50.png",
+    "ok": true,
+    "bytes": 1147939,
+    "at": "2026-05-12T09:39:32.927Z"
+  },
+  {
+    "filename": "bioderma_sebium_pore_refiner.png",
+    "ok": true,
+    "bytes": 1247332,
+    "at": "2026-05-12T09:39:39.621Z"
+  },
+  {
+    "filename": "bioderma_sensibio_defensive_active_care.png",
+    "ok": true,
+    "bytes": 1049884,
+    "at": "2026-05-12T09:39:46.701Z"
+  },
+  {
+    "filename": "biologique_recherche_lotion_p50_original.png",
+    "ok": true,
+    "bytes": 1092800,
+    "at": "2026-05-12T09:39:54.081Z"
+  },
+  {
+    "filename": "biotherm_aquasource_hyalu_plump_gel.png",
+    "ok": true,
+    "bytes": 1385286,
+    "at": "2026-05-12T09:40:01.284Z"
+  },
+  {
+    "filename": "biotherm_life_plankton_essence.png",
+    "ok": true,
+    "bytes": 1307914,
+    "at": "2026-05-12T09:40:08.437Z"
+  },
+  {
+    "filename": "boiron_homeoplasmine_multi_use_balm.png",
+    "ok": true,
+    "bytes": 1160535,
+    "at": "2026-05-12T09:40:17.813Z"
+  },
+  {
+    "filename": "by_terry_baume_de_rose_lip_balm.png",
+    "ok": true,
+    "bytes": 1202071,
+    "at": "2026-05-12T09:40:24.152Z"
+  },
+  {
+    "filename": "caudalie_grape_water_mist.png",
+    "ok": true,
+    "bytes": 1194493,
+    "at": "2026-05-12T09:40:36.366Z"
+  },
+  {
+    "filename": "caudalie_instant_detox_mask.png",
+    "ok": true,
+    "bytes": 1228211,
+    "at": "2026-05-12T09:40:46.463Z"
+  },
+  {
+    "filename": "caudalie_resveratrol_lift_firming_cashmere_cream.png",
+    "ok": true,
+    "bytes": 1200797,
+    "at": "2026-05-12T09:40:53.284Z"
+  },
+  {
+    "filename": "caudalie_vinoperfect_brightening_eye_cream.png",
+    "ok": true,
+    "bytes": 1096588,
+    "at": "2026-05-12T09:41:00.552Z"
+  },
+  {
+    "filename": "caudalie_vinopure_pore_purifying_gel_cleanser.png",
+    "ok": true,
+    "bytes": 1293778,
+    "at": "2026-05-12T09:41:07.432Z"
+  },
+  {
+    "filename": "caudalie_vinopure_spot_solution.png",
+    "ok": true,
+    "bytes": 1224826,
+    "at": "2026-05-12T09:41:14.351Z"
+  },
+  {
+    "filename": "caudalie_vinosun_invisible_high_protection_stick_spf50.png",
+    "ok": true,
+    "bytes": 1280685,
+    "at": "2026-05-12T09:41:23.725Z"
+  },
+  {
+    "filename": "caudalie_vinosun_protect_spf50_cream.png",
+    "ok": true,
+    "bytes": 1233808,
+    "at": "2026-05-12T09:41:31.201Z"
+  },
+  {
+    "filename": "christophe_robin_cleansing_purifying_sea_salt_scrub.png",
+    "ok": true,
+    "bytes": 1140154,
+    "at": "2026-05-12T09:41:37.948Z"
+  },
+  {
+    "filename": "christophe_robin_cleansing_volumizing_paste_with_pure_rassoul_clay.png",
+    "ok": true,
+    "bytes": 1112606,
+    "at": "2026-05-12T09:41:44.752Z"
+  },
+  {
+    "filename": "clarins_beauty_flash_balm.png",
+    "ok": true,
+    "bytes": 1149023,
+    "at": "2026-05-12T09:41:51.774Z"
+  },
+  {
+    "filename": "clarins_double_serum.png",
+    "ok": true,
+    "bytes": 1277212,
+    "at": "2026-05-12T09:41:58.826Z"
+  },
+  {
+    "filename": "cosmetics_27_baume_27_repairing_cream.png",
+    "ok": true,
+    "bytes": 1202278,
+    "at": "2026-05-12T09:42:10.567Z"
+  },
+  {
+    "filename": "darphin_intral_redness_relief_soothing_serum.png",
+    "ok": true,
+    "bytes": 1266893,
+    "at": "2026-05-12T09:42:17.613Z"
+  },
+  {
+    "filename": "darphin_niaouli_aromatic_care.png",
+    "ok": true,
+    "bytes": 1363626,
+    "at": "2026-05-12T09:42:24.643Z"
+  },
+  {
+    "filename": "ducray_anaphase_anti_hair_loss_shampoo.png",
+    "ok": true,
+    "bytes": 1002929,
+    "at": "2026-05-12T09:42:31.509Z"
+  },
+  {
+    "filename": "ducray_kelual_ds_anti_recurrence_shampoo.png",
+    "ok": true,
+    "bytes": 1151646,
+    "at": "2026-05-12T09:42:38.141Z"
+  },
+  {
+    "filename": "ducray_squanorm_anti_dandruff_shampoo.png",
+    "ok": true,
+    "bytes": 1037978,
+    "at": "2026-05-12T09:42:44.453Z"
+  },
+  {
+    "filename": "embryolisse_cicalish_lip_care.png",
+    "ok": true,
+    "bytes": 1188939,
+    "at": "2026-05-12T09:42:53.327Z"
+  },
+  {
+    "filename": "embryolisse_filaderme_emulsion.png",
+    "ok": true,
+    "bytes": 920988,
+    "at": "2026-05-12T09:43:00.251Z"
+  },
+  {
+    "filename": "embryolisse_lait_creme_concentre.png",
+    "ok": true,
+    "bytes": 1117205,
+    "at": "2026-05-12T09:43:06.708Z"
+  },
+  {
+    "filename": "embryolisse_lait_creme_concentre_anti_age.png",
+    "ok": true,
+    "bytes": 1149302,
+    "at": "2026-05-12T09:43:18.350Z"
+  },
+  {
+    "filename": "embryolisse_lait_creme_sensitive.png",
+    "ok": true,
+    "bytes": 1014027,
+    "at": "2026-05-12T09:43:27.170Z"
+  },
+  {
+    "filename": "eucerin_aquaphor_soothing_skin_balm.png",
+    "ok": true,
+    "bytes": 1071098,
+    "at": "2026-05-12T09:43:33.718Z"
+  },
+  {
+    "filename": "eucerin_replenishing_skin_relief_face_cream_with_5_urea.png",
+    "ok": true,
+    "bytes": 1030393,
+    "at": "2026-05-12T09:43:40.481Z"
+  },
+  {
+    "filename": "filorga_hydra_hyal_hydrating_plumping_concentrated_serum.png",
+    "ok": true,
+    "bytes": 1062902,
+    "at": "2026-05-12T09:43:49.235Z"
+  },
+  {
+    "filename": "filorga_meso_mask_anti_wrinkle_lightening_mask.png",
+    "ok": true,
+    "bytes": 1099349,
+    "at": "2026-05-12T09:43:56.267Z"
+  },
+  {
+    "filename": "filorga_ncef_reverse_regenerating_cream.png",
+    "ok": true,
+    "bytes": 1106026,
+    "at": "2026-05-12T09:44:03.260Z"
+  },
+  {
+    "filename": "filorga_optim_eyes_eye_contour_cream.png",
+    "ok": true,
+    "bytes": 1130996,
+    "at": "2026-05-12T09:44:10.304Z"
+  },
+  {
+    "filename": "filorga_skin_absolute_day_ultimate_rejuvenating_cream.png",
+    "ok": true,
+    "bytes": 1068700,
+    "at": "2026-05-12T09:44:17.611Z"
+  },
+  {
+    "filename": "filorga_time_filler_eyes_absolute_eye_correction.png",
+    "ok": true,
+    "bytes": 1018546,
+    "at": "2026-05-12T09:44:24.530Z"
+  },
+  {
+    "filename": "galenic_argane_nutritive_comforting_cream.png",
+    "ok": true,
+    "bytes": 1198211,
+    "at": "2026-05-12T09:44:31.147Z"
+  },
+  {
+    "filename": "galenic_pur_cleansing_foaming_gel.png",
+    "ok": true,
+    "bytes": 1044747,
+    "at": "2026-05-12T09:44:38.474Z"
+  },
+  {
+    "filename": "garancia_mille_et_une_nuits_anti_wrinkle_sleeping_cream.png",
+    "ok": true,
+    "bytes": 1125733,
+    "at": "2026-05-12T09:44:48.208Z"
+  },
+  {
+    "filename": "hexomedine_transcutanee_antiseptic_solution.png",
+    "ok": true,
+    "bytes": 1185642,
+    "at": "2026-05-12T09:44:55.740Z"
+  },
+  {
+    "filename": "ialuset_hyaluronic_acid_cream.png",
+    "ok": true,
+    "bytes": 1070432,
+    "at": "2026-05-12T09:45:02.642Z"
+  },
+  {
+    "filename": "klorane_anti_yellowing_silver_shampoo.png",
+    "ok": true,
+    "bytes": 1250267,
+    "at": "2026-05-12T09:45:09.615Z"
+  },
+  {
+    "filename": "klorane_centaury_brightening_eye_patches.png",
+    "ok": true,
+    "bytes": 1252707,
+    "at": "2026-05-12T09:45:18.826Z"
+  },
+  {
+    "filename": "klorane_cica_balm_rescue_for_sensitive_scalp.png",
+    "ok": true,
+    "bytes": 1221245,
+    "at": "2026-05-12T09:45:25.807Z"
+  },
+  {
+    "filename": "klorane_mango_butter_conditioner.png",
+    "ok": true,
+    "bytes": 1045295,
+    "at": "2026-05-12T09:45:36.211Z"
+  },
+  {
+    "filename": "klorane_smoothing_and_soothing_eye_patches_with_cornflower.png",
+    "ok": true,
+    "bytes": 1208374,
+    "at": "2026-05-12T09:45:43.389Z"
+  },
+  {
+    "filename": "la_roche_posay_anthelios_mineral_tinted_sunscreen_spf50.png",
+    "ok": true,
+    "bytes": 1067475,
+    "at": "2026-05-12T09:45:52.282Z"
+  },
+  {
+    "filename": "la_roche_posay_anthelios_pigment_correct_spf50.png",
+    "ok": true,
+    "bytes": 1102625,
+    "at": "2026-05-12T09:45:58.631Z"
+  },
+  {
+    "filename": "la_roche_posay_anthelios_uv_mune_400_invisible_fluid_spf50.png",
+    "ok": true,
+    "bytes": 1007700,
+    "at": "2026-05-12T09:46:04.814Z"
+  },
+  {
+    "filename": "la_roche_posay_effaclar_adapalene_gel_0_1.png",
+    "ok": true,
+    "bytes": 1369487,
+    "at": "2026-05-12T09:46:11.537Z"
+  },
+  {
+    "filename": "la_roche_posay_effaclar_micro_peeling_purifying_gel.png",
+    "ok": true,
+    "bytes": 1142719,
+    "at": "2026-05-12T09:46:21.881Z"
+  },
+  {
+    "filename": "la_roche_posay_hyalu_b5_hyaluronic_acid_serum.png",
+    "ok": true,
+    "bytes": 1196396,
+    "at": "2026-05-12T09:46:34.514Z"
+  },
+  {
+    "filename": "la_roche_posay_lipikar_baume_ap_m.png",
+    "ok": true,
+    "bytes": 1089057,
+    "at": "2026-05-12T09:46:41.055Z"
+  },
+  {
+    "filename": "la_roche_posay_lipikar_syndet_ap_cleansing_cream.png",
+    "ok": true,
+    "bytes": 1034902,
+    "at": "2026-05-12T09:46:47.307Z"
+  },
+  {
+    "filename": "la_roche_posay_mela_b3_dark_spot_serum.png",
+    "ok": true,
+    "bytes": 1112159,
+    "at": "2026-05-12T09:46:53.750Z"
+  },
+  {
+    "filename": "la_roche_posay_serozinc_mattifying_mist.png",
+    "ok": true,
+    "bytes": 1011058,
+    "at": "2026-05-12T09:47:00.555Z"
+  },
+  {
+    "filename": "la_roche_posay_toleriane_hydrating_gentle_cleanser.png",
+    "ok": true,
+    "bytes": 1022497,
+    "at": "2026-05-12T09:47:07.024Z"
+  },
+  {
+    "filename": "la_rosee_cleansing_cream.png",
+    "ok": true,
+    "bytes": 1106978,
+    "at": "2026-05-12T09:47:13.748Z"
+  },
+  {
+    "filename": "la_rosee_multi_purpose_stick_spf50.png",
+    "ok": true,
+    "bytes": 1199539,
+    "at": "2026-05-12T09:47:21.664Z"
+  },
+  {
+    "filename": "la_rosee_skin_cream.png",
+    "ok": true,
+    "bytes": 1197264,
+    "at": "2026-05-12T09:47:29.077Z"
+  },
+  {
+    "filename": "lierac_hydragenist_moisturizing_cream.png",
+    "ok": true,
+    "bytes": 1084409,
+    "at": "2026-05-12T09:47:36.115Z"
+  },
+  {
+    "filename": "lierac_lumilogie_day_night_dark_spot_correction_concentrate.png",
+    "ok": true,
+    "bytes": 1127183,
+    "at": "2026-05-12T09:47:43.591Z"
+  },
+  {
+    "filename": "lierac_premium_la_creme_voluptueuse.png",
+    "ok": true,
+    "bytes": 1048840,
+    "at": "2026-05-12T09:47:51.515Z"
+  },
+  {
+    "filename": "manucurist_active_glow_nail_polish.png",
+    "ok": true,
+    "bytes": 1172695,
+    "at": "2026-05-12T09:47:58.686Z"
+  },
+  {
+    "filename": "manucurist_green_flash_led_nail_polish.png",
+    "ok": true,
+    "bytes": 1196107,
+    "at": "2026-05-12T09:48:05.139Z"
+  },
+  {
+    "filename": "marvis_smokers_whitening_mint_toothpaste.png",
+    "ok": true,
+    "bytes": 1232827,
+    "at": "2026-05-12T09:48:11.745Z"
+  },
+  {
+    "filename": "marvis_strong_mint_toothpaste.png",
+    "ok": true,
+    "bytes": 1083979,
+    "at": "2026-05-12T09:48:18.468Z"
+  },
+  {
+    "filename": "mediceutics_fluide_solaire_spf50.png",
+    "ok": true,
+    "bytes": 1183792,
+    "at": "2026-05-12T09:48:25.530Z"
+  },
+  {
+    "filename": "mustela_cleansing_gel_hair_and_body.png",
+    "ok": true,
+    "bytes": 1101162,
+    "at": "2026-05-12T09:48:32.054Z"
+  },
+  {
+    "filename": "mustela_hydra_bebe_body_lotion.png",
+    "ok": true,
+    "bytes": 1003127,
+    "at": "2026-05-12T09:48:40.717Z"
+  },
+  {
+    "filename": "mustela_stelatopia_emollient_cream.png",
+    "ok": true,
+    "bytes": 1059298,
+    "at": "2026-05-12T09:48:47.637Z"
+  },
+  {
+    "filename": "noreva_exfoliac_nk_mat_daily_moisturizer.png",
+    "ok": true,
+    "bytes": 1020177,
+    "at": "2026-05-12T09:48:53.991Z"
+  },
+  {
+    "filename": "nuxe_creme_fraiche_de_beaute_48h_moisturizer.png",
+    "ok": true,
+    "bytes": 1235810,
+    "at": "2026-05-12T09:49:00.845Z"
+  },
+  {
+    "filename": "nuxe_huile_prodigieuse_florale.png",
+    "ok": true,
+    "bytes": 1235533,
+    "at": "2026-05-12T09:49:07.792Z"
+  },
+  {
+    "filename": "nuxe_huile_prodigieuse_or_shimmering_dry_oil.png",
+    "ok": true,
+    "bytes": 1347930,
+    "at": "2026-05-12T09:49:14.443Z"
+  },
+  {
+    "filename": "nuxe_merveillance_lift_firming_cream.png",
+    "ok": true,
+    "bytes": 1184038,
+    "at": "2026-05-12T09:49:22.939Z"
+  },
+  {
+    "filename": "nuxe_reve_de_miel_gentle_face_cleanser.png",
+    "ok": true,
+    "bytes": 1268293,
+    "at": "2026-05-12T09:49:32.169Z"
+  },
+  {
+    "filename": "nuxe_reve_de_miel_honey_lip_oil.png",
+    "ok": true,
+    "bytes": 1470798,
+    "at": "2026-05-12T09:49:39.368Z"
+  },
+  {
+    "filename": "panier_des_sens_mediterranean_olive_body_lotion.png",
+    "ok": true,
+    "bytes": 1107880,
+    "at": "2026-05-12T09:49:46.976Z"
+  },
+  {
+    "filename": "panier_des_sens_provence_rose_hand_cream.png",
+    "ok": true,
+    "bytes": 1224592,
+    "at": "2026-05-12T09:49:53.905Z"
+  },
+  {
+    "filename": "patyka_lift_sculpt_firming_cream.png",
+    "ok": true,
+    "bytes": 1178958,
+    "at": "2026-05-12T09:50:01.995Z"
+  },
+  {
+    "filename": "patyka_pure_radiance_brightening_serum.png",
+    "ok": true,
+    "bytes": 1311290,
+    "at": "2026-05-12T09:50:09.085Z"
+  },
+  {
+    "filename": "payot_creme_no_2_soothing_cream.png",
+    "ok": true,
+    "bytes": 1134582,
+    "at": "2026-05-12T09:50:15.880Z"
+  },
+  {
+    "filename": "payot_pate_grise_the_original_purifying_treatment.png",
+    "ok": true,
+    "bytes": 1123239,
+    "at": "2026-05-12T09:50:22.032Z"
+  },
+  {
+    "filename": "phyto_phytocyane_densifying_treatment.png",
+    "ok": true,
+    "bytes": 1267519,
+    "at": "2026-05-12T09:50:28.911Z"
+  },
+  {
+    "filename": "phyto_phytodefrisant_anti_frizz_botanical_blow_dry_balm.png",
+    "ok": true,
+    "bytes": 1248497,
+    "at": "2026-05-12T09:50:39.773Z"
+  },
+  {
+    "filename": "puressentiel_muscles_joints_cryo_pure_roller.png",
+    "ok": true,
+    "bytes": 1192082,
+    "at": "2026-05-12T09:50:46.727Z"
+  },
+  {
+    "filename": "puressentiel_respiratory_decongestant_inhaler.png",
+    "ok": true,
+    "bytes": 1015335,
+    "at": "2026-05-12T09:50:53.279Z"
+  },
+  {
+    "filename": "rene_furterer_karite_hydra_hydrating_mask.png",
+    "ok": true,
+    "bytes": 1191551,
+    "at": "2026-05-12T09:51:00.253Z"
+  },
+  {
+    "filename": "roger_gallet_bois_d_orange_eau_fraiche.png",
+    "ok": true,
+    "bytes": 1155320,
+    "at": "2026-05-12T09:51:07.766Z"
+  },
+  {
+    "filename": "roger_gallet_fleur_d_osmanthus_soap.png",
+    "ok": true,
+    "bytes": 1432790,
+    "at": "2026-05-12T09:51:15.007Z"
+  },
+  {
+    "filename": "svr_ampoule_vitamin_c_anti_fatigue.png",
+    "ok": true,
+    "bytes": 1166256,
+    "at": "2026-05-12T09:51:22.039Z"
+  },
+  {
+    "filename": "svr_hydraliane_riche.png",
+    "ok": true,
+    "bytes": 1167198,
+    "at": "2026-05-12T09:51:33.824Z"
+  },
+  {
+    "filename": "svr_sebiaclear_active.png",
+    "ok": true,
+    "bytes": 1013286,
+    "at": "2026-05-12T09:51:40.946Z"
+  },
+  {
+    "filename": "svr_sebiaclear_mat_pores.png",
+    "ok": true,
+    "bytes": 1070081,
+    "at": "2026-05-12T09:51:49.557Z"
+  },
+  {
+    "filename": "svr_topialyse_baume_protect.png",
+    "ok": true,
+    "bytes": 1011700,
+    "at": "2026-05-12T09:52:05.199Z"
+  },
+  {
+    "filename": "talika_eye_therapy_patch.png",
+    "ok": true,
+    "bytes": 1078651,
+    "at": "2026-05-12T09:52:11.417Z"
+  },
+  {
+    "filename": "talika_lipocils_eyelash_conditioning_gel.png",
+    "ok": true,
+    "bytes": 1104970,
+    "at": "2026-05-12T09:52:20.295Z"
+  },
+  {
+    "filename": "topicrem_hydra_light_moisturizing_cream.png",
+    "ok": true,
+    "bytes": 1134947,
+    "at": "2026-05-12T09:52:28.493Z"
+  },
+  {
+    "filename": "topicrem_ultra_moisturizing_body_milk.png",
+    "ok": true,
+    "bytes": 985974,
+    "at": "2026-05-12T09:52:35.817Z"
+  },
+  {
+    "filename": "uriage_bariederm_cica_repairing_lip_stick.png",
+    "ok": true,
+    "bytes": 1136352,
+    "at": "2026-05-12T09:52:42.743Z"
+  },
+  {
+    "filename": "uriage_ds_hair_soothing_cleansing_shampoo.png",
+    "ok": true,
+    "bytes": 1002003,
+    "at": "2026-05-12T09:52:49.032Z"
+  },
+  {
+    "filename": "uriage_eau_thermale_water_cream.png",
+    "ok": true,
+    "bytes": 1128969,
+    "at": "2026-05-12T09:52:57.922Z"
+  },
+  {
+    "filename": "vichy_capital_soleil_uv_age_daily_spf50.png",
+    "ok": true,
+    "bytes": 1075237,
+    "at": "2026-05-12T09:53:04.327Z"
+  },
+  {
+    "filename": "vichy_deodorant_24h_hypoallergenic_dry_touch.png",
+    "ok": true,
+    "bytes": 1040670,
+    "at": "2026-05-12T09:53:11.611Z"
+  },
+  {
+    "filename": "vichy_dercos_anti_dandruff_shampoo.png",
+    "ok": true,
+    "bytes": 1051989,
+    "at": "2026-05-12T09:53:18.231Z"
+  },
+  {
+    "filename": "vichy_liftactiv_supreme_day_cream.png",
+    "ok": true,
+    "bytes": 1192330,
+    "at": "2026-05-12T09:53:24.918Z"
+  },
+  {
+    "filename": "vichy_liftactiv_vitamin_c_brightening_skin_corrector.png",
+    "ok": true,
+    "bytes": 1090160,
+    "at": "2026-05-12T09:53:31.109Z"
+  },
+  {
+    "filename": "vichy_mineral_89_probiotic_fractions_serum.png",
+    "ok": true,
+    "bytes": 1064124,
+    "at": "2026-05-12T09:53:37.682Z"
+  },
+  {
+    "filename": "voltaren_actigo_pain_relief_gel.png",
+    "ok": true,
+    "bytes": 1052809,
+    "at": "2026-05-12T09:53:44.759Z"
+  },
+  {
+    "filename": "weleda_skin_food_lip_balm.png",
+    "ok": true,
+    "bytes": 1244854,
+    "at": "2026-05-12T09:53:51.588Z"
+  },
+  {
+    "filename": "weleda_skin_food_original.png",
+    "ok": true,
+    "bytes": 1206995,
+    "at": "2026-05-12T09:54:00.160Z"
+  },
+  {
+    "filename": "yon_ka_lotion_yon_ka_toner.png",
+    "ok": true,
+    "bytes": 1033127,
+    "at": "2026-05-12T09:54:07.711Z"
+  }
+]
