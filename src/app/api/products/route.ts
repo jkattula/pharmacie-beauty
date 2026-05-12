@@ -94,6 +94,7 @@ export async function GET(request: NextRequest) {
           cult_favorites: "iconic cult favorite French pharmacy products",
           best_deals: "affordable budget French pharmacy products under 20 euros",
           france_only: "France exclusive products not available in US",
+          different_in_france: "French pharmacy products that are reformulated or different in the US version",
           tiktok_trending: "viral TikTok trending French pharmacy skincare",
           best_sunscreens: "French pharmacy sunscreen SPF",
         };
