@@ -62,18 +62,6 @@ export const CURATED_CATEGORIES = {
     icon: "MapPin",
     color: "blue",
   },
-  different_in_france: {
-    label: "Different in France",
-    description: "Same product, different formulation in France",
-    icon: "Beaker",
-    color: "purple",
-  },
-  tiktok_trending: {
-    label: "TikTok Favorites",
-    description: "Viral skincare picks",
-    icon: "Sparkles",
-    color: "pink",
-  },
   best_sunscreens: {
     label: "Sunscreens",
     description: "EU-approved UV filters",
@@ -113,8 +101,6 @@ export interface CategoryCountsResponse {
   cult_favorites: number;
   best_deals: number;
   france_only: number;
-  different_in_france: number;
-  tiktok_trending: number;
   best_sunscreens: number;
 }
 

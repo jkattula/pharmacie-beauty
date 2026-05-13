@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="icircumflex" format="2">
+	<advance width="369"/>
+	<unicode hex="00EE"/>
+	<outline>
+		<contour>
+			<point x="156" y="-12" type="curve" smooth="yes"/>
+			<point x="264" y="-12"/>
+			<point x="338" y="78"/>
+			<point x="369" y="109" type="curve"/>
+			<point x="363" y="116" type="line"/>
+			<point x="315" y="72"/>
+			<point x="276" y="47"/>
+			<point x="218" y="47" type="curve" smooth="yes"/>
+			<point x="172" y="47"/>
+			<point x="139" y="81"/>
+			<point x="139" y="127" type="curve" smooth="yes"/>
+			<point x="139" y="241"/>
+			<point x="278" y="360"/>
+			<point x="251" y="360" type="curve" smooth="yes"/>
+			<point x="246" y="360"/>
+			<point x="236" y="357"/>
+			<point x="229" y="357" type="curve" smooth="yes"/>
+			<point x="217" y="357"/>
+			<point x="217" y="360"/>
+			<point x="211" y="360" type="curve" smooth="yes"/>
+			<point x="192" y="360"/>
+			<point x="95" y="222"/>
+			<point x="-6" y="116" type="curve"/>
+			<point x="0" y="109" type="line"/>
+			<point x="60" y="170"/>
+			<point x="122" y="236"/>
+			<point x="157" y="271" type="curve"/>
+			<point x="153" y="264"/>
+			<point x="148" y="256"/>
+			<point x="143" y="248" type="curve" smooth="yes"/>
+			<point x="104" y="184"/>
+			<point x="76" y="123"/>
+			<point x="76" y="76" type="curve" smooth="yes"/>
+			<point x="76" y="24"/>
+			<point x="104" y="-12"/>
+		</contour>
+		<component base="circumflexcomb" xOffset="83" yOffset="12"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2025-09-23 10:46:54 +0000</string>
+		</dict>
+	</lib>
+</glyph>

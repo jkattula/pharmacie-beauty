@@ -11,8 +11,9 @@ require('dotenv').config({ path: path.join(__dirname, '../.env.local') });
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-const SEED_PATH = path.join(__dirname, 'data/new-products-seed.json');
-const OUT_PATH = path.join(__dirname, 'data/new-products-enriched.json');
+const NAME_ARG = process.argv[2] || 'new-products';
+const SEED_PATH = path.join(__dirname, `data/${NAME_ARG}-seed.json`);
+const OUT_PATH = path.join(__dirname, `data/${NAME_ARG}-enriched.json`);
 
 const SYSTEM_PROMPT = `You are a French pharmacy beauty expert. Given a brand + product name + category + packaging hint,
 return realistic, accurate product details for a US-traveler shopping guide.

@@ -13,7 +13,8 @@ const path = require('path');
 const postgres = require('postgres');
 require('dotenv').config({ path: path.join(__dirname, '../.env.local') });
 
-const ENRICHED_PATH = path.join(__dirname, 'data/new-products-enriched.json');
+const NAME_ARG = process.argv[2] || 'new-products';
+const ENRICHED_PATH = path.join(__dirname, `data/${NAME_ARG}-enriched.json`);
 
 async function main() {
   const products = JSON.parse(fs.readFileSync(ENRICHED_PATH, 'utf8'));

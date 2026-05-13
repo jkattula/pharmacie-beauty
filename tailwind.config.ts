@@ -1,79 +1,84 @@
 import type { Config } from "tailwindcss"
 
 const config: Config = {
-  darkMode: ["class"],
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      // Custom color palette from design guidelines
       colors: {
-        // Core brand colors
-        background: {
-          DEFAULT: "#F6F4F1", // Warm off-white
-          dark: "#1a1a1a",
-        },
-        foreground: {
-          DEFAULT: "#2B2E2E", // Slate text
-          dark: "#f5f5f5",
-        },
-        // Stone tones for borders and muted elements
-        stone: {
-          DEFAULT: "#D8D3C8",
-          light: "#E8E4DC",
-          dark: "#C5BFB3",
-        },
-        // Primary olive accent
-        primary: {
-          DEFAULT: "#8A927C",
-          foreground: "#FFFFFF",
-          hover: "#7A8269",
-          light: "#A5AC9A",
-        },
-        // Secondary/muted colors
-        muted: {
-          DEFAULT: "#F6F4F1",
-          foreground: "#6B7280",
-        },
-        // Accent gold (use sparingly)
-        accent: {
-          DEFAULT: "#D4A853",
-          foreground: "#FFFFFF",
-        },
-        // Status colors
-        success: "#4CAF50",
-        warning: "#FF9800",
-        error: "#EF5350",
-        // Card and input backgrounds
+        // Surfaces — warm paper neutrals (ivory)
+        bone:  "#F5F1E8",   // legacy alias, now used for image placeholders only
+        cream: "#FFFFFF",   // card surface (was #FAF7F1)
+        paper: "#FAF7F1",   // softer ivory accent
+        // Ink — text
+        ink:   "#1A1410",
+        ink2:  "#2A2018",
+        ink3:  "#4A3F36",
+        // Accents
+        apothecary: "oklch(0.42 0.05 155)",
+        blush:      "oklch(0.88 0.03 25)",
+        // Semantic tokens — map to shadcn-style CSS vars in globals.css
+        background: "#FDFBF5",
+        foreground: "#1A1410",
         card: {
           DEFAULT: "#FFFFFF",
-          dark: "#242424",
+          foreground: "#1A1410",
         },
-        border: {
-          DEFAULT: "#D8D3C8",
-          dark: "#333333",
+        border: "#EAE3D2",
+        input:  "#EAE3D2",
+        ring:   "oklch(0.42 0.05 155)",
+        muted: {
+          DEFAULT: "#F5F1E8",
+          foreground: "#4A3F36",
+        },
+        primary: {
+          DEFAULT: "#1A1410",
+          foreground: "#EFEAE0",
+          hover: "#2A2018",
+        },
+        secondary: {
+          DEFAULT: "transparent",
+          foreground: "#1A1410",
+        },
+        accent: {
+          DEFAULT: "oklch(0.42 0.05 155)",
+          foreground: "#EFEAE0",
+        },
+        destructive: {
+          DEFAULT: "#B5483A",
+          foreground: "#FBF8F1",
         },
       },
-      // Typography using Playfair Display + Inter
       fontFamily: {
-        serif: ["Playfair Display", "Georgia", "serif"],
-        sans: ["Inter", "system-ui", "sans-serif"],
+        script: ["var(--font-script)", "Pinyon Script", "Italianno", "cursive"],
+        serif:  ["var(--font-cormorant)", "Cormorant Garamond", "Georgia", "serif"],
+        mono:   ["var(--font-mono)", "JetBrains Mono", "ui-monospace", "monospace"],
+        sans:   ["var(--font-cormorant)", "Cormorant Garamond", "Georgia", "serif"],
       },
-      // Border radius
       borderRadius: {
-        lg: "0.75rem",
-        md: "0.5rem",
-        sm: "0.375rem",
+        xs:   "3px",
+        sm:   "6px",
+        md:   "10px",
+        lg:   "18px",
         full: "9999px",
       },
-      // Shadows
-      boxShadow: {
-        'card': '0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06)',
-        'card-hover': '0 4px 6px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.06)',
-        'elevated': '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)',
+      spacing: {
+        "s-1": "4px",
+        "s-2": "8px",
+        "s-3": "12px",
+        "s-4": "16px",
+        "s-5": "24px",
+        "s-6": "32px",
+        "s-7": "48px",
+        "s-8": "64px",
+        "s-9": "96px",
       },
-      // Animations
+      boxShadow: {
+        card:         "0 1px 2px rgba(26,20,16,0.04)",
+        "card-hover": "0 2px 6px rgba(26,20,16,0.06)",
+        elevated:     "0 8px 24px rgba(26,20,16,0.08)",
+      },
       keyframes: {
         "fade-in": {
           "0%": { opacity: "0" },

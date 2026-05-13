@@ -1,6 +1,6 @@
 "use client";
 
-import { Star, Tag, MapPin, Sparkles, Sun, Beaker } from "lucide-react";
+import { Dot } from "@/components/ui/marks";
 import { cn } from "@/lib/utils";
 import { CURATED_CATEGORIES, type CuratedCategory } from "@/types";
 
@@ -11,24 +11,6 @@ interface CategoryChipsProps {
   className?: string;
 }
 
-const CATEGORY_ICONS: Record<CuratedCategory, React.ElementType> = {
-  cult_favorites: Star,
-  best_deals: Tag,
-  france_only: MapPin,
-  different_in_france: Beaker,
-  tiktok_trending: Sparkles,
-  best_sunscreens: Sun,
-};
-
-const CATEGORY_COLORS: Record<CuratedCategory, string> = {
-  cult_favorites: "bg-amber-50 text-amber-700 border-amber-200 hover:bg-amber-100 data-[selected=true]:bg-amber-600 data-[selected=true]:text-white data-[selected=true]:border-amber-600",
-  best_deals: "bg-green-50 text-green-700 border-green-200 hover:bg-green-100 data-[selected=true]:bg-green-600 data-[selected=true]:text-white data-[selected=true]:border-green-600",
-  france_only: "bg-blue-50 text-blue-700 border-blue-200 hover:bg-blue-100 data-[selected=true]:bg-blue-600 data-[selected=true]:text-white data-[selected=true]:border-blue-600",
-  different_in_france: "bg-purple-50 text-purple-700 border-purple-200 hover:bg-purple-100 data-[selected=true]:bg-purple-600 data-[selected=true]:text-white data-[selected=true]:border-purple-600",
-  tiktok_trending: "bg-pink-50 text-pink-700 border-pink-200 hover:bg-pink-100 data-[selected=true]:bg-pink-600 data-[selected=true]:text-white data-[selected=true]:border-pink-600",
-  best_sunscreens: "bg-yellow-50 text-yellow-700 border-yellow-200 hover:bg-yellow-100 data-[selected=true]:bg-yellow-600 data-[selected=true]:text-white data-[selected=true]:border-yellow-600",
-};
-
 export function CategoryChips({
   selectedCategory,
   onCategorySelect,
@@ -38,9 +20,8 @@ export function CategoryChips({
   return (
     <div className={cn("w-full", className)}>
       {/* Horizontal scroll on mobile; wrap & center on tablet+ */}
-      <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide -mx-4 px-4 sm:flex-wrap sm:justify-center sm:overflow-visible sm:mx-0 sm:px-0">
+      <div className="flex gap-s-2 overflow-x-auto pb-s-2 scrollbar-hide -mx-s-4 px-s-4 sm:flex-wrap sm:justify-center sm:overflow-visible sm:mx-0 sm:px-0">
         {(Object.keys(CURATED_CATEGORIES) as CuratedCategory[]).map((category) => {
-          const Icon = CATEGORY_ICONS[category];
           const isSelected = selectedCategory === category;
           const count = counts?.[category];
 
@@ -50,18 +31,24 @@ export function CategoryChips({
               onClick={() => onCategorySelect(category)}
               data-selected={isSelected}
               className={cn(
-                "flex items-center gap-2 px-4 py-2 rounded-full border text-sm font-medium whitespace-nowrap shrink-0 transition-all duration-200",
-                "touch-target",
-                CATEGORY_COLORS[category]
+                "inline-flex items-center gap-s-2 px-s-4 py-s-2 rounded-full border font-mono uppercase tracking-[0.18em] text-[11px] whitespace-nowrap shrink-0 transition-colors touch-target",
+                isSelected
+                  ? "bg-ink text-bone border-ink"
+                  : "bg-cream text-ink border-border hover:border-ink/40"
               )}
             >
-              <Icon className="h-4 w-4" />
+              <Dot
+                size={6}
+                className={isSelected ? "text-bone" : "text-ink/60"}
+              />
               <span>{CURATED_CATEGORIES[category].label}</span>
               {count !== undefined && count > 0 && (
-                <span className={cn(
-                  "text-xs px-1.5 py-0.5 rounded-full",
-                  isSelected ? "bg-white/20" : "bg-black/10"
-                )}>
+                <span
+                  className={cn(
+                    "ml-s-1 text-[10px] tracking-normal",
+                    isSelected ? "text-bone/70" : "text-ink3"
+                  )}
+                >
                   {count}
                 </span>
               )}

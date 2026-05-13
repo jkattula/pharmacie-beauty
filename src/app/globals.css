@@ -2,64 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
-
 @layer base {
   :root {
-    --background: 36 27% 96%; /* #F6F4F1 */
-    --foreground: 180 5% 17%; /* #2B2E2E */
+    --background: 45 55% 98%;        /* ivory #FDFBF5 */
+    --foreground: 24 22% 8%;          /* ink #1A1410 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 180 5% 17%;
+    --card: 0 0% 100%;                /* pure white */
+    --card-foreground: 24 22% 8%;
 
-    --primary: 80 9% 53%; /* #8A927C */
-    --primary-foreground: 0 0% 100%;
+    --primary: 24 22% 8%;             /* ink */
+    --primary-foreground: 40 47% 96%; /* ivory */
 
-    --secondary: 36 14% 82%; /* #D8D3C8 */
-    --secondary-foreground: 180 5% 17%;
+    --secondary: 40 47% 96%;
+    --secondary-foreground: 24 22% 8%;
 
-    --muted: 36 27% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 40 33% 93%;              /* soft ivory shade */
+    --muted-foreground: 24 18% 25%;   /* ink3 */
 
-    --accent: 43 56% 58%; /* Gold */
-    --accent-foreground: 0 0% 100%;
+    --accent: 155 22% 30%;            /* apothecary green */
+    --accent-foreground: 40 47% 96%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 8 50% 47%;
+    --destructive-foreground: 40 47% 96%;
 
-    --border: 36 14% 82%;
-    --input: 36 14% 82%;
-    --ring: 80 9% 53%;
+    --border: 40 30% 87%;
+    --input: 40 30% 87%;
+    --ring: 155 22% 30%;
 
-    --radius: 0.75rem;
-  }
-
-  .dark {
-    --background: 0 0% 10%;
-    --foreground: 0 0% 96%;
-
-    --card: 0 0% 14%;
-    --card-foreground: 0 0% 96%;
-
-    --primary: 80 9% 60%;
-    --primary-foreground: 0 0% 10%;
-
-    --secondary: 0 0% 20%;
-    --secondary-foreground: 0 0% 96%;
-
-    --muted: 0 0% 18%;
-    --muted-foreground: 0 0% 60%;
-
-    --accent: 43 56% 58%;
-    --accent-foreground: 0 0% 10%;
-
-    --destructive: 0 62% 50%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 80 9% 60%;
+    --radius: 10px;
   }
 }
 
@@ -69,18 +39,46 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-serif antialiased;
+    font-weight: 500;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+    @apply font-serif text-ink tracking-tight;
+    font-weight: 600;
   }
 }
 
 @layer components {
+  /* Tracked monospace label — used for badges, meta, section heads */
+  .label {
+    @apply font-mono uppercase text-ink3;
+    font-size: 11px;
+    letter-spacing: 0.24em;
+  }
+
+  /* Script accent — for "pharmacie" word inside headlines */
+  .font-display {
+    @apply font-script;
+    font-weight: 400;
+  }
+
+  /* Diagonal cross-hatch placeholder for missing product images */
+  .image-placeholder {
+    background-color: #F0EBDE;
+    background-image: repeating-linear-gradient(
+      135deg,
+      transparent 0,
+      transparent 6px,
+      rgba(74, 63, 54, 0.06) 6px,
+      rgba(74, 63, 54, 0.06) 7px
+    );
+  }
+
   /* Shimmer loading animation */
   .shimmer {
-    @apply relative overflow-hidden bg-stone;
+    @apply relative overflow-hidden;
+    background-color: hsl(var(--border) / 0.6);
   }
 
   .shimmer::after {
@@ -89,7 +87,7 @@
     background: linear-gradient(
       90deg,
       transparent 0%,
-      rgba(255, 255, 255, 0.4) 50%,
+      rgba(251, 248, 241, 0.5) 50%,
       transparent 100%
     );
     background-size: 200% 100%;
@@ -127,7 +125,6 @@
 }
 
 @layer utilities {
-  /* Hide scrollbar but keep functionality */
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -137,7 +134,6 @@
     display: none;
   }
 
-  /* Safe area padding for mobile devices */
   .safe-bottom {
     padding-bottom: env(safe-area-inset-bottom);
   }

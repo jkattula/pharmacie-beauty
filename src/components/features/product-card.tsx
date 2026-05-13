@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { Star, MapPin, Sparkles, Tag, Check, AlertTriangle, X, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { Cross, Seal, Dot } from "@/components/ui/marks";
 import { cn, formatPriceEur, formatPriceUsd, calculateSavings, getProductImageUrl } from "@/lib/utils";
 import type { ProductCard as ProductCardType } from "@/types";
 
@@ -12,54 +13,67 @@ interface ProductCardProps {
   className?: string;
 }
 
+type BadgeVariant = "nouveau" | "recommande" | "ordonnance" | "default";
+
 export function ProductCard({ product, onClick, className }: ProductCardProps) {
   const notSoldInUs = product.availabilityStatus === "not_available";
   const savings = notSoldInUs
     ? null
     : calculateSavings(product.priceEurMin, product.priceUsdEstimate);
 
-  // Determine which badges to show (max 2 to avoid clutter)
-  const badges: Array<{ type: string; icon: React.ElementType; variant: "cult" | "trending" | "france" | "deal" }> = [];
+  // Map product flags to brand-book badge variants (max 2)
+  const badges: Array<{ label: string; variant: BadgeVariant }> = [];
 
-  if (product.cultFavoriteFlag) {
-    badges.push({ type: "Cult Favorite", icon: Star, variant: "cult" });
-  }
   if (product.tiktokTrendingFlag) {
-    badges.push({ type: "Trending", icon: Sparkles, variant: "trending" });
+    badges.push({ label: "Trending", variant: "nouveau" });
+  }
+  if (product.cultFavoriteFlag) {
+    badges.push({ label: "Cult Favorite", variant: "recommande" });
   }
   if (product.franceOnlyFlag) {
-    badges.push({ type: "France Only", icon: MapPin, variant: "france" });
+    badges.push({ label: "France Only", variant: "ordonnance" });
   }
-  if (product.dealFlag && !badges.length) {
-    badges.push({ type: "Great Deal", icon: Tag, variant: "deal" });
+  if (product.dealFlag && badges.length < 2) {
+    badges.push({ label: "Great Deal", variant: "default" });
   }
 
   const visibleBadges = badges.slice(0, 2);
 
-  // Availability icon
-  const AvailabilityIcon = () => {
+  // Availability — brand-book mark + mono label, no colored pill.
+  // Suppress "same_formula" (the default) and "not_available" (already conveyed
+  // by the "Not sold in US" line) to reduce visual noise on the card.
+  const availability = (() => {
     switch (product.availabilityStatus) {
-      case "same_formula":
-        return <Check className="h-3 w-3 text-green-600" />;
       case "reformulated":
-        return <AlertTriangle className="h-3 w-3 text-amber-600" />;
-      case "not_available":
-        return <X className="h-3 w-3 text-red-600" />;
+        return { Icon: Seal, label: "Different US formula" };
       default:
         return null;
     }
-  };
+  })();
+
+  // Single secondary item on the price row: prefer "Not sold in US",
+  // then a savings callout, then the USD estimate.
+  const secondary = (() => {
+    if (notSoldInUs) {
+      return { text: "Not sold in US", tone: "muted" as const };
+    }
+    if (savings && savings > 0) {
+      return { text: `Save ~${savings}%`, tone: "accent" as const };
+    }
+    const usd = formatPriceUsd(product.priceUsdEstimate);
+    return usd ? { text: usd, tone: "muted" as const } : null;
+  })();
 
   return (
     <article
       onClick={onClick}
       className={cn(
-        "group relative flex flex-col bg-card rounded-lg overflow-hidden shadow-card card-hover cursor-pointer",
+        "group relative flex flex-col bg-cream rounded-md overflow-hidden border border-border/60 card-hover cursor-pointer",
         className
       )}
     >
       {/* Image Container */}
-      <div className="relative aspect-square bg-stone-light overflow-hidden">
+      <div className="relative aspect-square image-placeholder overflow-hidden">
         <Image
           src={getProductImageUrl(product.imageUrl, product.name)}
           alt={product.name}
@@ -70,61 +84,55 @@ export function ProductCard({ product, onClick, className }: ProductCardProps) {
 
         {/* Badges overlay */}
         {visibleBadges.length > 0 && (
-          <div className="absolute top-2 left-2 flex flex-col gap-1">
+          <div className="absolute top-s-2 left-s-2 flex flex-col gap-s-1">
             {visibleBadges.map((badge, idx) => (
-              <Badge key={idx} variant={badge.variant} className="text-[10px] px-2 py-0.5">
-                <badge.icon className="h-3 w-3 mr-1" />
-                {badge.type}
+              <Badge key={idx} variant={badge.variant}>
+                {badge.label}
               </Badge>
             ))}
+          </div>
+        )}
+
+        {/* Availability overlay — only shown for reformulated; bottom-left mirror */}
+        {availability && (
+          <div className="absolute bottom-s-2 left-s-2 inline-flex items-center gap-s-1 rounded-full bg-cream/90 backdrop-blur-sm px-s-2 py-s-1 font-mono uppercase tracking-[0.18em] text-[10px] text-ink2">
+            <availability.Icon size={10} className="text-ink2" />
+            <span>{availability.label}</span>
           </div>
         )}
       </div>
 
       {/* Content */}
-      <div className="flex flex-col flex-1 p-3">
+      <div className="flex flex-col flex-1 p-s-4">
         {/* Brand Name */}
-        <p className="text-xs font-serif text-muted-foreground uppercase tracking-wide">
+        <p className="label">
           {product.brandName}
         </p>
 
         {/* Product Name */}
-        <h3 className="font-medium text-sm mt-1 line-clamp-2 leading-tight">
+        <h3 className="font-serif text-ink text-base mt-s-2 line-clamp-2 leading-snug font-medium">
           {product.name}
         </h3>
 
         {/* Description */}
-        <p className="text-xs text-muted-foreground mt-1 line-clamp-2 leading-snug">
+        <p className="font-serif text-ink3 text-sm mt-s-1 line-clamp-2 leading-[1.55]">
           {product.whatItsGoodFor}
         </p>
 
-        {/* Price & Availability */}
-        <div className="mt-auto pt-3 space-y-1">
-          {/* Price Row */}
-          <div className="flex items-baseline justify-between">
-            <span className="font-semibold text-primary">
+        {/* Price */}
+        <div className="mt-auto pt-s-3">
+          <div className="flex items-baseline justify-between gap-s-2">
+            <span className="font-mono text-ink text-sm">
               {formatPriceEur(product.priceEurMin, product.priceEurMax)}
             </span>
-            {savings && savings > 0 && (
-              <span className="text-xs text-green-600 font-medium">
-                Save ~{savings}%
-              </span>
-            )}
-          </div>
-
-          {/* US Price & Availability */}
-          <div className="flex items-center justify-between text-xs text-muted-foreground">
-            <span>
-              {notSoldInUs ? "Not sold in US" : formatPriceUsd(product.priceUsdEstimate)}
-            </span>
-            {product.availabilityStatus && (
-              <span className="flex items-center gap-1">
-                <AvailabilityIcon />
-                <span>
-                  {product.availabilityStatus === "same_formula" && "In US"}
-                  {product.availabilityStatus === "reformulated" && "Different US formula"}
-                  {product.availabilityStatus === "not_available" && "France Only"}
-                </span>
+            {secondary && (
+              <span
+                className={cn(
+                  "font-mono uppercase tracking-[0.18em] text-[10px]",
+                  secondary.tone === "accent" ? "text-accent" : "text-ink3"
+                )}
+              >
+                {secondary.text}
               </span>
             )}
           </div>
@@ -136,7 +144,7 @@ export function ProductCard({ product, onClick, className }: ProductCardProps) {
               target="_blank"
               rel="noopener noreferrer sponsored"
               onClick={(e) => e.stopPropagation()}
-              className="mt-2 flex items-center justify-center gap-1 text-xs font-medium text-primary hover:text-primary/80 hover:underline"
+              className="mt-s-3 flex items-center justify-center gap-s-1 font-mono uppercase tracking-[0.18em] text-[10px] text-ink hover:underline underline-offset-4"
             >
               Buy on {product.shopRetailer}
               <ExternalLink className="h-3 w-3" />

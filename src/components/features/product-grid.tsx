@@ -12,6 +12,9 @@ interface ProductGridProps {
   className?: string;
 }
 
+const GRID_CLASSES =
+  "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-s-4 sm:gap-s-5 lg:gap-s-6";
+
 export function ProductGrid({
   products,
   onProductClick,
@@ -24,12 +27,10 @@ export function ProductGrid({
 
   if (products.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center py-12 text-center">
-        <div className="w-16 h-16 bg-stone-light rounded-full flex items-center justify-center mb-4">
-          <span className="text-2xl">🔍</span>
-        </div>
-        <h3 className="font-serif text-lg mb-2">No products found</h3>
-        <p className="text-sm text-muted-foreground max-w-xs">
+      <div className="flex flex-col items-center justify-center py-s-9 text-center">
+        <p className="label mb-s-4">— Nothing found —</p>
+        <h3 className="font-serif text-ink text-xl mb-s-2 font-medium">No products found</h3>
+        <p className="font-serif text-ink3 text-sm max-w-xs">
           Try a different search term or browse our curated categories above.
         </p>
       </div>
@@ -37,12 +38,7 @@ export function ProductGrid({
   }
 
   return (
-    <div
-      className={cn(
-        "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 lg:gap-6",
-        className
-      )}
-    >
+    <div className={cn(GRID_CLASSES, className)}>
       {products.map((product) => (
         <ProductCard
           key={product.id}
@@ -54,21 +50,20 @@ export function ProductGrid({
   );
 }
 
-// Loading skeleton
 function ProductGridSkeleton({ className }: { className?: string }) {
   return (
-    <div className={cn("grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 lg:gap-6", className)}>
+    <div className={cn(GRID_CLASSES, className)}>
       {Array.from({ length: 6 }).map((_, i) => (
-        <div key={i} className="flex flex-col bg-card rounded-lg overflow-hidden shadow-card">
-          {/* Image skeleton */}
-          <Skeleton className="aspect-square" />
-
-          {/* Content skeleton */}
-          <div className="p-3 space-y-2">
+        <div
+          key={i}
+          className="flex flex-col bg-cream rounded-md overflow-hidden border border-border/60"
+        >
+          <Skeleton className="aspect-square rounded-none" />
+          <div className="p-s-4 space-y-s-2">
             <Skeleton className="h-3 w-16" />
             <Skeleton className="h-4 w-full" />
             <Skeleton className="h-3 w-3/4" />
-            <div className="pt-2 space-y-1">
+            <div className="pt-s-2 space-y-s-1">
               <Skeleton className="h-4 w-12" />
               <Skeleton className="h-3 w-20" />
             </div>

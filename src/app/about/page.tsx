@@ -10,19 +10,17 @@ export default function AboutPage() {
     <div className="min-h-screen bg-background">
       <SiteHeader linkTitle />
 
-      <main className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <main className="max-w-2xl mx-auto px-s-4 sm:px-s-5 lg:px-s-7 py-s-8 sm:py-s-9">
         {/* Hero */}
-        <section className="text-center mb-10 sm:mb-12">
-          <p className="text-sm font-serif text-primary uppercase tracking-widest mb-3">
-            About
-          </p>
-          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
-            The story behind this site
+        <section className="text-center mb-s-5">
+          <p className="label mb-s-3">— About —</p>
+          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-ink leading-[1.1]">
+            The story behind <span className="font-script font-normal align-baseline">this site</span>
           </h1>
         </section>
 
         {/* Story */}
-        <article className="space-y-5 text-foreground/90 leading-relaxed">
+        <article className="space-y-s-5 font-serif text-[17px] text-ink leading-[1.55]">
           <p>
             Last year in Cannes, I had almost no time to get to the French
             pharmacies.
@@ -59,7 +57,7 @@ export default function AboutPage() {
             thing, my entire network might as well use it too.
           </p>
 
-          <h2 className="font-serif text-2xl font-semibold pt-6">What this is</h2>
+          <h2 className="font-serif text-2xl text-ink pt-s-5 font-medium">What this is</h2>
           <p>
             A clean database of French pharmacy beauty products: ingredients,
             what they actually do, what they&apos;re best for, what they cost,
@@ -83,7 +81,7 @@ export default function AboutPage() {
             you bought because someone behind a counter said you should.
           </p>
 
-          <h2 className="font-serif text-2xl font-semibold pt-6">Who it&apos;s for</h2>
+          <h2 className="font-serif text-2xl text-ink pt-s-5 font-medium">Who it&apos;s for</h2>
           <p>
             Women going to Cannes who&apos;d rather not waste an afternoon on a
             wrong guess. Men shopping for the women in their lives. Anyone
@@ -96,7 +94,7 @@ export default function AboutPage() {
             built for you.
           </p>
 
-          <h2 className="font-serif text-2xl font-semibold pt-6">Why I&apos;m sharing it now</h2>
+          <h2 className="font-serif text-2xl text-ink pt-s-5 font-medium">Why I&apos;m sharing it now</h2>
           <p>
             When something doesn&apos;t exist the way you need it, you build it.
             Then you share it.
@@ -106,32 +104,32 @@ export default function AboutPage() {
             adding.
           </p>
 
-          <p className="font-serif text-xl pt-4">Jen</p>
+          <p className="font-script text-3xl pt-s-4 text-ink">Jen</p>
         </article>
 
         {/* CTA */}
-        <section className="mt-12 text-center">
+        <section className="mt-s-9 text-center">
           <Link href="/">
-            <Button size="lg" className="rounded-full">
+            <Button size="lg">
               Browse the catalog
-              <ArrowRight className="ml-2 h-4 w-4" />
+              <ArrowRight className="ml-s-2 h-4 w-4" />
             </Button>
           </Link>
         </section>
 
         {/* Disclaimer */}
-        <footer className="mt-16 pt-8 border-t border-stone text-center">
-          <p className="text-xs text-muted-foreground leading-relaxed max-w-md mx-auto">
+        <footer className="mt-s-9 pt-s-7 border-t border-border text-center">
+          <p className="font-serif text-sm text-ink3 leading-relaxed max-w-md mx-auto">
             Prices are approximate and may vary by pharmacy. Product availability
             changes; check with the pharmacy. Not medical advice; consult a
             dermatologist for skin concerns.
           </p>
-          <p className="text-xs text-muted-foreground leading-relaxed max-w-md mx-auto mt-4">
+          <p className="font-serif text-sm text-ink3 leading-relaxed max-w-md mx-auto mt-s-4">
             Some links on this site are affiliate links. If you buy through them,
             I may earn a small commission at no extra cost to you.
           </p>
-          <p className="text-xs text-muted-foreground mt-4">
-            &copy; 2026 Pharmacie Beauty. Built by Jennifer Kattula.
+          <p className="label mt-s-5">
+            © 2026 · Pharmacie Beauty · Jennifer Kattula
           </p>
         </footer>
       </main>

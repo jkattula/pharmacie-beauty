@@ -61,12 +61,6 @@ export async function getProductsByCategory(category: CuratedCategory): Promise<
     case "france_only":
       filterCondition = eq(products.franceOnlyFlag, true);
       break;
-    case "different_in_france":
-      filterCondition = eq(usAvailability.availabilityStatus, "reformulated");
-      break;
-    case "tiktok_trending":
-      filterCondition = eq(products.tiktokTrendingFlag, true);
-      break;
     case "best_sunscreens":
       filterCondition = ilike(products.category, "%sunscreen%");
       break;
@@ -215,15 +209,10 @@ export async function getProductById(id: string): Promise<ProductWithDetails | n
 export async function getCategoryCounts(): Promise<Record<CuratedCategory, number>> {
   const db = getDb();
 
-  const [cultFavorites, bestDeals, franceOnly, differentInFrance, tiktokTrending, sunscreens] = await Promise.all([
+  const [cultFavorites, bestDeals, franceOnly, sunscreens] = await Promise.all([
     db.select({ count: sql<number>`count(*)::int` }).from(products).where(eq(products.cultFavoriteFlag, true)),
     db.select({ count: sql<number>`count(*)::int` }).from(products).where(eq(products.dealFlag, true)),
     db.select({ count: sql<number>`count(*)::int` }).from(products).where(eq(products.franceOnlyFlag, true)),
-    db.select({ count: sql<number>`count(*)::int` })
-      .from(products)
-      .innerJoin(usAvailability, eq(products.id, usAvailability.productId))
-      .where(eq(usAvailability.availabilityStatus, "reformulated")),
-    db.select({ count: sql<number>`count(*)::int` }).from(products).where(eq(products.tiktokTrendingFlag, true)),
     db.select({ count: sql<number>`count(*)::int` }).from(products).where(ilike(products.category, "%sunscreen%")),
   ]);
 
@@ -231,8 +220,6 @@ export async function getCategoryCounts(): Promise<Record<CuratedCategory, numbe
     cult_favorites: cultFavorites[0]?.count ?? 0,
     best_deals: bestDeals[0]?.count ?? 0,
     france_only: franceOnly[0]?.count ?? 0,
-    different_in_france: differentInFrance[0]?.count ?? 0,
-    tiktok_trending: tiktokTrending[0]?.count ?? 0,
     best_sunscreens: sunscreens[0]?.count ?? 0,
   };
 }

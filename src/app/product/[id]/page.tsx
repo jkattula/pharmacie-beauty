@@ -3,25 +3,22 @@
 import { useParams, useRouter } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
-import {
-  ArrowLeft,
-  Star,
-  MapPin,
-  Sparkles,
-  Tag,
-  Check,
-  AlertTriangle,
-  X,
-  Beaker,
-  Info,
-  ExternalLink
-} from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Cross, Seal, Dot, Rule, Frame } from "@/components/ui/marks";
 import { cn, formatPriceEur, formatPriceUsd, calculateSavings, getProductImageUrl } from "@/lib/utils";
 import type { ProductWithDetails } from "@/types";
 import { AVAILABILITY_STATUS } from "@/types";
+
+type BadgeVariant = "nouveau" | "recommande" | "ordonnance" | "default";
+
+const AVAILABILITY_ICONS: Record<string, typeof Cross> = {
+  Check: Cross,
+  AlertTriangle: Seal,
+  X: Dot,
+};
 
 export default function ProductDetailPage() {
   const params = useParams();
@@ -44,10 +41,11 @@ export default function ProductDetailPage() {
 
   if (error || !product) {
     return (
-      <div className="min-h-screen bg-background flex flex-col items-center justify-center p-4">
+      <div className="min-h-screen bg-background flex flex-col items-center justify-center p-s-5">
         <div className="text-center">
-          <h2 className="font-serif text-xl mb-2">Product not found</h2>
-          <p className="text-muted-foreground mb-4">
+          <p className="label mb-s-3">— Not found —</p>
+          <h2 className="font-serif text-2xl text-ink mb-s-3 font-medium">Product not found</h2>
+          <p className="font-serif text-ink3 mb-s-5">
             We couldn&apos;t find this product.
           </p>
           <Button onClick={() => router.push("/")}>Back to Home</Button>
@@ -68,32 +66,39 @@ export default function ProductDetailPage() {
     ? AVAILABILITY_STATUS[product.usAvailability.availabilityStatus]
     : null;
 
+  // Map flags to brand-book badge variants
+  const flagBadges: Array<{ label: string; variant: BadgeVariant }> = [];
+  if (product.tiktokTrendingFlag) flagBadges.push({ label: "Trending", variant: "nouveau" });
+  if (product.cultFavoriteFlag) flagBadges.push({ label: "Cult Favorite", variant: "recommande" });
+  if (product.franceOnlyFlag) flagBadges.push({ label: "France Only", variant: "ordonnance" });
+  if (product.dealFlag) flagBadges.push({ label: "Great Deal", variant: "default" });
+
   return (
-    <div className="min-h-screen bg-background pb-24">
+    <div className="min-h-screen bg-background pb-s-9">
       {/* Header */}
-      <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-stone">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center gap-3">
+      <header className="sticky top-0 z-40 bg-background border-b border-border">
+        <div className="max-w-6xl mx-auto px-s-4 sm:px-s-5 lg:px-s-7 py-s-3 flex items-center gap-s-3">
           <Button
             variant="ghost"
             size="icon"
             onClick={() => router.back()}
-            className="rounded-full"
+            aria-label="Back"
           >
             <ArrowLeft className="h-5 w-5" />
           </Button>
           <div className="flex-1 min-w-0">
-            <p className="text-xs text-muted-foreground uppercase tracking-wide font-serif">
+            <p className="label">
               {product.brand.name}
             </p>
-            <h1 className="font-medium text-sm truncate">{product.name}</h1>
+            <h1 className="font-serif text-ink text-base truncate">{product.name}</h1>
           </div>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:gap-8 lg:px-8 lg:py-6">
+      <main className="max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:gap-s-8 lg:px-s-7 lg:py-s-6">
         {/* Product Image */}
-        <div className="relative aspect-square bg-stone-light lg:rounded-lg lg:overflow-hidden lg:sticky lg:top-20 lg:self-start">
+        <div className="relative aspect-square image-placeholder lg:rounded-md lg:overflow-hidden lg:sticky lg:top-20 lg:self-start">
           <Image
             src={getProductImageUrl(product.imageUrl, product.name)}
             alt={product.name}
@@ -104,79 +109,58 @@ export default function ProductDetailPage() {
           />
 
           {/* Badges */}
-          <div className="absolute top-4 left-4 flex flex-col gap-2">
-            {product.cultFavoriteFlag && (
-              <Badge variant="cult" className="text-sm">
-                <Star className="h-4 w-4 mr-1" />
-                Cult Favorite
-              </Badge>
-            )}
-            {product.tiktokTrendingFlag && (
-              <Badge variant="trending" className="text-sm">
-                <Sparkles className="h-4 w-4 mr-1" />
-                Trending
-              </Badge>
-            )}
-            {product.franceOnlyFlag && (
-              <Badge variant="france" className="text-sm">
-                <MapPin className="h-4 w-4 mr-1" />
-                France Only
-              </Badge>
-            )}
-            {product.dealFlag && (
-              <Badge variant="deal" className="text-sm">
-                <Tag className="h-4 w-4 mr-1" />
-                Great Deal
-              </Badge>
-            )}
-          </div>
+          {flagBadges.length > 0 && (
+            <div className="absolute top-s-4 left-s-4 flex flex-col gap-s-2">
+              {flagBadges.map((badge) => (
+                <Badge key={badge.label} variant={badge.variant}>
+                  {badge.label}
+                </Badge>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Product Info */}
-        <div className="px-4 py-6 space-y-6 lg:px-0 lg:py-0">
+        <div className="px-s-4 py-s-6 space-y-s-6 lg:px-0 lg:py-0">
           {/* Title & Brand */}
           <div>
-            <p className="text-sm font-serif text-primary uppercase tracking-wide">
+            <p className="label">
               {product.brand.name}
             </p>
-            <h2 className="font-serif text-2xl font-semibold mt-1">
+            <h2 className="font-serif text-ink text-3xl mt-s-2 leading-tight font-medium">
               {product.name}
             </h2>
-            <p className="text-sm text-muted-foreground mt-1">
+            <p className="font-serif text-ink3 text-sm mt-s-1 capitalize">
               {product.category}
             </p>
           </div>
 
           {/* Price Section */}
-          <div className="bg-card rounded-lg p-4 shadow-card">
+          <div className="border border-border rounded-md p-s-5 bg-cream">
             <div className="flex items-baseline justify-between">
               <div>
-                <p className="text-2xl font-semibold text-primary">
+                <p className="font-mono text-2xl text-ink">
                   {formatPriceEur(
                     product.price?.priceEurMin ?? null,
                     product.price?.priceEurMax ?? null
                   )}
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  In French pharmacies
-                </p>
+                <p className="label mt-s-1">In French pharmacies</p>
               </div>
               {notSoldInUs ? (
                 <div className="text-right">
-                  <p className="text-sm font-medium text-muted-foreground">
-                    Not sold in US
-                  </p>
+                  <p className="label">Not sold in US</p>
                 </div>
               ) : (
                 savings && savings > 0 && (
                   <div className="text-right">
-                    <p className="text-lg font-semibold text-green-600">
+                    <p className="font-mono uppercase tracking-[0.18em] text-sm text-accent">
                       Save ~{savings}%
                     </p>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="font-serif text-base text-ink2 mt-s-1">
                       vs {formatPriceUsd(product.price?.priceUsdEstimate ?? null)}
                       {product.usAvailability?.availabilityStatus === "reformulated" && (
-                        <span className="block">(different US formula)</span>
+                        <span className="block text-sm text-ink3">(different US formula)</span>
                       )}
                     </p>
                   </div>
@@ -191,7 +175,7 @@ export default function ProductDetailPage() {
               href={product.shopUrl}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className="flex items-center justify-center gap-2 w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full font-medium py-3 px-6 transition-colors"
+              className="flex items-center justify-center gap-s-2 w-full bg-ink text-bone hover:bg-ink2 rounded-full font-mono uppercase tracking-[0.18em] text-[11px] py-s-4 px-s-5 transition-colors"
             >
               Buy on {product.shopRetailer}
               <ExternalLink className="h-4 w-4" />
@@ -200,68 +184,45 @@ export default function ProductDetailPage() {
 
           {/* Description */}
           <div>
-            <h3 className="font-serif text-lg font-semibold mb-2">About</h3>
-            <p className="text-sm leading-relaxed text-foreground/90">
+            <h3 className="label mb-s-2">— About —</h3>
+            <p className="font-serif text-ink text-[17px] leading-[1.55]">
               {product.description}
             </p>
           </div>
 
           {/* Good For */}
           <div>
-            <h3 className="font-serif text-lg font-semibold mb-2">
-              Good For
-            </h3>
-            <p className="text-sm leading-relaxed text-foreground/90">
+            <h3 className="label mb-s-2">— Good for —</h3>
+            <p className="font-serif text-ink text-[17px] leading-[1.55]">
               {product.whatItsGoodFor}
             </p>
           </div>
 
           {/* Why Buy in France */}
-          <div className="bg-primary/10 rounded-lg p-4">
-            <div className="flex items-start gap-3">
-              <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
-                <Info className="h-4 w-4 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-serif font-semibold text-primary mb-1">
-                  Why Buy in France?
-                </h3>
-                <p className="text-sm leading-relaxed text-foreground/90">
-                  {product.whyBuyInFrance}
-                </p>
-              </div>
-            </div>
+          <div className="border-l-2 border-accent pl-s-5 py-s-2">
+            <h3 className="label text-accent mb-s-2">— Why buy in France —</h3>
+            <p className="font-serif text-ink text-[17px] leading-[1.55]">
+              {product.whyBuyInFrance}
+            </p>
           </div>
 
           {/* US Availability */}
           {availabilityInfo && (
-            <div className="border border-stone rounded-lg p-4">
-              <div className="flex items-start gap-3">
-                <div
-                  className={cn(
-                    "w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0",
-                    availabilityInfo.color === "green" && "bg-green-100",
-                    availabilityInfo.color === "amber" && "bg-amber-100",
-                    availabilityInfo.color === "red" && "bg-red-100"
-                  )}
-                >
-                  {availabilityInfo.icon === "Check" && (
-                    <Check className="h-4 w-4 text-green-600" />
-                  )}
-                  {availabilityInfo.icon === "AlertTriangle" && (
-                    <AlertTriangle className="h-4 w-4 text-amber-600" />
-                  )}
-                  {availabilityInfo.icon === "X" && (
-                    <X className="h-4 w-4 text-red-600" />
-                  )}
+            <div className="border border-border rounded-md p-s-5">
+              <div className="flex items-start gap-s-4">
+                <div className="flex-shrink-0 text-ink2 mt-s-1">
+                  {(() => {
+                    const Icon = AVAILABILITY_ICONS[availabilityInfo.icon] ?? Dot;
+                    return <Icon size={20} />;
+                  })()}
                 </div>
-                <div>
-                  <h3 className="font-semibold mb-1">{availabilityInfo.label}</h3>
-                  <p className="text-sm text-muted-foreground">
+                <div className="flex-1">
+                  <h3 className="font-serif text-ink text-lg font-medium">{availabilityInfo.label}</h3>
+                  <p className="font-serif text-ink3 text-sm leading-[1.55] mt-s-1">
                     {availabilityInfo.description}
                   </p>
                   {product.usAvailability?.notes && (
-                    <p className="text-sm text-foreground/90 mt-2">
+                    <p className="font-serif text-ink text-sm leading-[1.55] mt-s-2">
                       {product.usAvailability.notes}
                     </p>
                   )}
@@ -273,33 +234,27 @@ export default function ProductDetailPage() {
           {/* Key Ingredients */}
           {product.ingredients && product.ingredients.length > 0 && (
             <div>
-              <h3 className="font-serif text-lg font-semibold mb-3">
-                Key Ingredients
-              </h3>
-              <ul className="space-y-3">
+              <h3 className="label mb-s-4">— Key ingredients —</h3>
+              <ul className="space-y-s-4">
                 {product.ingredients.map((ingredient) => (
-                  <li key={ingredient.id} className="flex gap-3">
+                  <li key={ingredient.id} className="flex gap-s-3">
                     <div
                       className={cn(
-                        "flex-shrink-0 mt-0.5 w-6 h-6 rounded-full flex items-center justify-center",
-                        ingredient.euOnlyFlag
-                          ? "bg-primary/15 text-primary"
-                          : "bg-stone-light text-foreground/60"
+                        "flex-shrink-0 mt-s-1",
+                        ingredient.euOnlyFlag ? "text-accent" : "text-ink3"
                       )}
                     >
-                      <Beaker className="h-3.5 w-3.5" />
+                      {ingredient.euOnlyFlag ? <Frame size={14} /> : <Dot size={10} />}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="font-medium text-sm flex items-center gap-2 flex-wrap">
+                      <p className="font-serif text-ink text-base font-medium flex items-center gap-s-2 flex-wrap">
                         {ingredient.name}
                         {ingredient.euOnlyFlag && (
-                          <Badge variant="eu" className="text-[10px] px-1.5 py-0">
-                            EU-only
-                          </Badge>
+                          <Badge variant="recommande">EU-only</Badge>
                         )}
                       </p>
                       {ingredient.notes && (
-                        <p className="text-sm text-muted-foreground leading-snug mt-0.5">
+                        <p className="font-serif text-ink3 text-sm leading-[1.55] mt-s-1">
                           {ingredient.notes}
                         </p>
                       )}
@@ -308,8 +263,7 @@ export default function ProductDetailPage() {
                 ))}
               </ul>
               {product.ingredients.some((i) => i.euOnlyFlag) && (
-                <p className="text-xs text-muted-foreground mt-3">
-                  <Beaker className="h-3 w-3 inline mr-1" />
+                <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink3 mt-s-4">
                   EU-only ingredients may not appear in US formulations.
                 </p>
               )}
@@ -318,14 +272,12 @@ export default function ProductDetailPage() {
 
           {/* Review Summary */}
           {product.reviewSummary && (
-            <div className="bg-card rounded-lg p-4 shadow-card">
-              <h3 className="font-serif text-lg font-semibold mb-2">
-                What People Say
-              </h3>
-              <p className="text-sm leading-relaxed text-foreground/90 italic">
-                &quot;{product.reviewSummary.aiSummaryText}&quot;
+            <div className="border border-border rounded-md p-s-5 bg-cream">
+              <h3 className="label mb-s-3">— What people say —</h3>
+              <p className="font-serif text-ink text-[17px] leading-[1.55]">
+                &ldquo;{product.reviewSummary.aiSummaryText}&rdquo;
               </p>
-              <p className="text-xs text-muted-foreground mt-2 capitalize">
+              <p className="label mt-s-3 normal-case">
                 — {product.reviewSummary.sourceType} reviews
               </p>
             </div>
@@ -334,8 +286,11 @@ export default function ProductDetailPage() {
       </main>
 
       {/* Footer Disclaimer */}
-      <footer className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center">
-        <p className="text-xs text-muted-foreground">
+      <footer className="max-w-6xl mx-auto px-s-4 sm:px-s-5 lg:px-s-7 py-s-5 text-center">
+        <div className="flex justify-center text-ink3 mb-s-3">
+          <Rule size={24} />
+        </div>
+        <p className="font-serif text-sm text-ink3 leading-relaxed">
           Prices are approximate. Product availability may vary.
           <br />
           Not medical advice.
@@ -345,33 +300,32 @@ export default function ProductDetailPage() {
   );
 }
 
-// Loading skeleton
 function ProductDetailSkeleton({ onBack }: { onBack: () => void }) {
   return (
     <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-stone">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center gap-3">
-          <Button variant="ghost" size="icon" onClick={onBack} className="rounded-full">
+      <header className="sticky top-0 z-40 bg-background border-b border-border">
+        <div className="max-w-6xl mx-auto px-s-4 sm:px-s-5 lg:px-s-7 py-s-3 flex items-center gap-s-3">
+          <Button variant="ghost" size="icon" onClick={onBack} aria-label="Back">
             <ArrowLeft className="h-5 w-5" />
           </Button>
           <div className="flex-1">
-            <Skeleton className="h-3 w-20 mb-1" />
+            <Skeleton className="h-3 w-20 mb-s-1" />
             <Skeleton className="h-4 w-32" />
           </div>
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:gap-8 lg:px-8 lg:py-6">
-        <Skeleton className="aspect-square lg:rounded-lg" />
-        <div className="px-4 py-6 space-y-6">
+      <main className="max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:gap-s-8 lg:px-s-7 lg:py-s-6">
+        <Skeleton className="aspect-square lg:rounded-md" />
+        <div className="px-s-4 py-s-6 space-y-s-6">
           <div>
-            <Skeleton className="h-4 w-24 mb-2" />
-            <Skeleton className="h-8 w-full mb-1" />
+            <Skeleton className="h-4 w-24 mb-s-2" />
+            <Skeleton className="h-8 w-full mb-s-1" />
             <Skeleton className="h-4 w-20" />
           </div>
-          <Skeleton className="h-24 w-full rounded-lg" />
+          <Skeleton className="h-24 w-full rounded-md" />
           <div>
-            <Skeleton className="h-6 w-20 mb-2" />
+            <Skeleton className="h-6 w-20 mb-s-2" />
             <Skeleton className="h-20 w-full" />
           </div>
         </div>

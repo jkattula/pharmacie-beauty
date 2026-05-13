@@ -1,18 +1,31 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import localFont from "next/font/local";
+import { Cormorant_Garamond, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Providers } from "./providers";
 
-// Load fonts
-const inter = Inter({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
   display: "swap",
 });
 
-const playfair = Playfair_Display({
+const mono = JetBrains_Mono({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  weight: ["400", "500"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
+const script = localFont({
+  src: [
+    { path: "../../public/fonts/Interlope-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../../public/fonts/Interlope-Regular.woff",  weight: "400", style: "normal" },
+  ],
+  variable: "--font-script",
   display: "swap",
 });
 
@@ -55,10 +68,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#F6F4F1" },
-    { media: "(prefers-color-scheme: dark)", color: "#1a1a1a" },
-  ],
+  themeColor: "#FDFBF5",
 };
 
 export default function RootLayout({
@@ -69,9 +79,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${playfair.variable} font-sans antialiased`}
+        className={`${cormorant.variable} ${mono.variable} ${script.variable} font-serif antialiased`}
       >
         <Providers>{children}</Providers>
+        <Script
+          src="https://s.skimresources.com/js/302842X1790866.skimlinks.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

@@ -1,30 +1,53 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { Suspense, useCallback } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { SearchBar } from "@/components/features/search-bar";
 import { CategoryChips } from "@/components/features/category-chips";
 import { ProductGrid } from "@/components/features/product-grid";
 import { SiteHeader } from "@/components/features/site-header";
 import { Loader2 } from "lucide-react";
+import { Rule } from "@/components/ui/marks";
+import { CURATED_CATEGORIES } from "@/types";
 import type { ProductCard, CuratedCategory, CategoryCountsResponse } from "@/types";
 
-export default function HomePage() {
+function HomePageContent() {
   const router = useRouter();
-  const [searchQuery, setSearchQuery] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState<CuratedCategory | null>(null);
+  const searchParams = useSearchParams();
 
-  // Build the API URL based on current filters
-  const getApiUrl = useCallback(() => {
+  const searchQuery = searchParams.get("search") ?? "";
+  const categoryParam = searchParams.get("category");
+  const selectedCategory: CuratedCategory | null =
+    categoryParam && categoryParam in CURATED_CATEGORIES
+      ? (categoryParam as CuratedCategory)
+      : null;
+
+  const updateParams = useCallback(
+    (next: { search?: string | null; category?: CuratedCategory | null }) => {
+      const params = new URLSearchParams(searchParams.toString());
+      if (next.search !== undefined) {
+        if (next.search) params.set("search", next.search);
+        else params.delete("search");
+      }
+      if (next.category !== undefined) {
+        if (next.category) params.set("category", next.category);
+        else params.delete("category");
+      }
+      const qs = params.toString();
+      router.replace(qs ? `/?${qs}` : "/", { scroll: false });
+    },
+    [router, searchParams]
+  );
+
+  const apiUrl = (() => {
     const params = new URLSearchParams();
     if (searchQuery) params.set("search", searchQuery);
     if (selectedCategory) params.set("category", selectedCategory);
     const queryString = params.toString();
     return queryString ? `/api/products?${queryString}` : "/api/products";
-  }, [searchQuery, selectedCategory]);
+  })();
 
-  // Fetch products
   const {
     data: products = [],
     isLoading: isLoadingProducts,
@@ -32,14 +55,13 @@ export default function HomePage() {
   } = useQuery<ProductCard[]>({
     queryKey: ["products", searchQuery, selectedCategory],
     queryFn: async () => {
-      const response = await fetch(getApiUrl());
+      const response = await fetch(apiUrl);
       if (!response.ok) throw new Error("Failed to fetch products");
       return response.json();
     },
-    staleTime: 5 * 60 * 1000, // 5 minutes
+    staleTime: 5 * 60 * 1000,
   });
 
-  // Fetch category counts
   const { data: categoryCounts } = useQuery<CategoryCountsResponse>({
     queryKey: ["categoryCounts"],
     queryFn: async () => {
@@ -47,22 +69,24 @@ export default function HomePage() {
       if (!response.ok) throw new Error("Failed to fetch counts");
       return response.json();
     },
-    staleTime: 10 * 60 * 1000, // 10 minutes
+    staleTime: 10 * 60 * 1000,
   });
 
-  // Handle search submission
-  const handleSearch = useCallback((query: string) => {
-    setSelectedCategory(null);
-    setSearchQuery(query);
-  }, []);
+  const handleSearch = useCallback(
+    (query: string) => {
+      updateParams({ search: query || null, category: null });
+    },
+    [updateParams]
+  );
 
-  // Handle category selection
-  const handleCategorySelect = useCallback((category: CuratedCategory) => {
-    setSearchQuery("");
-    setSelectedCategory((prev) => (prev === category ? null : category));
-  }, []);
+  const handleCategorySelect = useCallback(
+    (category: CuratedCategory) => {
+      const next = selectedCategory === category ? null : category;
+      updateParams({ search: null, category: next });
+    },
+    [selectedCategory, updateParams]
+  );
 
-  // Handle product click
   const handleProductClick = useCallback(
     (productId: string) => {
       router.push(`/product/${productId}`);
@@ -77,15 +101,14 @@ export default function HomePage() {
       <SiteHeader>
         <SearchBar
           onSearch={handleSearch}
-          placeholder="Anti-aging eye cream, rosacea care..."
+          placeholder="anti-aging eye cream, rosacea care…"
           isLoading={isLoading}
         />
       </SiteHeader>
 
-      {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+      <main className="max-w-7xl mx-auto px-s-4 sm:px-s-5 lg:px-s-7 py-s-5 sm:py-s-7">
         {/* Category Chips */}
-        <div className="mb-6">
+        <div className="mb-s-6">
           <CategoryChips
             selectedCategory={selectedCategory}
             onCategorySelect={handleCategorySelect}
@@ -95,21 +118,21 @@ export default function HomePage() {
 
         {/* Loading Indicator for Search */}
         {isLoading && searchQuery && (
-          <div className="flex items-center justify-center gap-2 mb-4 p-4 bg-primary/10 rounded-lg">
-            <Loader2 className="h-5 w-5 animate-spin text-primary" />
-            <span className="text-sm text-muted-foreground">
-              Searching for &quot;{searchQuery}&quot;...
+          <div className="flex items-center justify-center gap-s-2 mb-s-4 p-s-4 bg-cream rounded-md border border-border">
+            <Loader2 className="h-4 w-4 animate-spin text-accent" />
+            <span className="label">
+              Searching · {searchQuery}
             </span>
           </div>
         )}
 
         {/* Results Count */}
         {!isLoading && products.length > 0 && (searchQuery || selectedCategory) && (
-          <div className="mb-4">
-            <p className="text-sm text-muted-foreground">
-              {products.length} product{products.length !== 1 ? "s" : ""} found
-              {searchQuery && ` for "${searchQuery}"`}
-              {selectedCategory && ` in ${selectedCategory.replace(/_/g, " ")}`}
+          <div className="mb-s-4">
+            <p className="label">
+              {products.length} product{products.length !== 1 ? "s" : ""}
+              {searchQuery && ` · ${searchQuery}`}
+              {selectedCategory && ` · ${selectedCategory.replace(/_/g, " ")}`}
             </p>
           </div>
         )}
@@ -123,8 +146,11 @@ export default function HomePage() {
       </main>
 
       {/* Footer */}
-      <footer className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
-        <p className="text-xs text-muted-foreground">
+      <footer className="max-w-7xl mx-auto px-s-4 sm:px-s-5 lg:px-s-7 py-s-8 text-center">
+        <div className="flex justify-center text-ink3 mb-s-4">
+          <Rule size={28} />
+        </div>
+        <p className="font-serif text-sm text-ink3 leading-relaxed">
           Prices are approximate. Product availability may vary.
           <br />
           Not medical advice. Consult a dermatologist for skin concerns.
@@ -132,10 +158,18 @@ export default function HomePage() {
           Some links are affiliate links. If you buy through them, I may earn a
           small commission at no extra cost to you.
         </p>
-        <p className="text-xs text-muted-foreground mt-4">
-          &copy; 2026 Pharmacie Beauty. Built by Jennifer Kattula.
+        <p className="label mt-s-5">
+          © 2026 · Pharmacie Beauty · Jennifer Kattula
         </p>
       </footer>
     </div>
+  );
+}
+
+export default function HomePage() {
+  return (
+    <Suspense fallback={null}>
+      <HomePageContent />
+    </Suspense>
   );
 }

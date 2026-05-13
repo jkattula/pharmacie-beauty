@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { Wordmark } from "@/components/ui/wordmark";
 
 const NAV_LINKS = [
   { href: "/", label: "Browse" },
@@ -20,22 +21,25 @@ export function SiteHeader({ linkTitle = false, className, children }: SiteHeade
   const pathname = usePathname();
 
   const titleContent = (
-    <>
-      <h1 className="font-serif text-xl sm:text-2xl font-semibold text-foreground leading-tight">
-        Pharmacie Beauty
-      </h1>
-      <p className="text-xs sm:text-sm text-muted-foreground hidden sm:block">
-        Your French pharmacy guide
-      </p>
-    </>
+    <span className="flex items-baseline gap-s-3 text-ink">
+      <Wordmark
+        variant="monogram"
+        className="text-[34px] sm:hidden"
+      />
+      <Wordmark
+        variant="inline"
+        className="hidden sm:inline-flex text-[28px] sm:text-[32px]"
+      />
+      <span className="label hidden md:inline-block">Your French pharmacy guide</span>
+    </span>
   );
-  const titleClass = "text-center sm:text-left flex-1 sm:flex-initial";
+  const titleClass = "flex-1 sm:flex-initial";
 
   return (
-    <header className={cn("sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-stone", className)}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className={cn("sticky top-0 z-40 bg-background border-b border-border", className)}>
+      <div className="max-w-7xl mx-auto px-s-4 sm:px-s-5 lg:px-s-7">
         {/* Top row: title + nav */}
-        <div className="flex items-center justify-between py-3 sm:py-4">
+        <div className="flex items-center justify-between py-s-3 sm:py-s-4">
           {linkTitle ? (
             <Link href="/" className={titleClass}>
               {titleContent}
@@ -46,7 +50,7 @@ export function SiteHeader({ linkTitle = false, className, children }: SiteHeade
             </div>
           )}
 
-          <nav aria-label="Primary" className="flex items-center gap-1 sm:gap-2">
+          <nav aria-label="Primary" className="flex items-center gap-s-1">
             {NAV_LINKS.map((link) => {
               const isActive = pathname === link.href || (link.href !== "/" && pathname?.startsWith(link.href));
               return (
@@ -54,10 +58,10 @@ export function SiteHeader({ linkTitle = false, className, children }: SiteHeade
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    "px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-sm font-medium transition-colors touch-target",
+                    "px-s-4 py-s-2 rounded-full font-mono uppercase tracking-[0.18em] text-[11px] transition-colors touch-target inline-flex items-center",
                     isActive
-                      ? "bg-primary text-primary-foreground"
-                      : "text-foreground/70 hover:text-foreground hover:bg-stone-light"
+                      ? "bg-ink text-bone"
+                      : "text-ink hover:bg-cream"
                   )}
                 >
                   {link.label}
@@ -69,7 +73,7 @@ export function SiteHeader({ linkTitle = false, className, children }: SiteHeade
 
         {/* Optional children (e.g. search bar on home) */}
         {children && (
-          <div className="pb-4 max-w-2xl mx-auto">
+          <div className="pb-s-4 max-w-2xl mx-auto">
             {children}
           </div>
         )}
