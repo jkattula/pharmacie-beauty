@@ -11,44 +11,31 @@ const NAV_LINKS = [
 ];
 
 interface SiteHeaderProps {
-  /** When true, the title links back to the homepage. Default false (already on homepage). */
-  linkTitle?: boolean;
   className?: string;
   children?: React.ReactNode;
 }
 
-export function SiteHeader({ linkTitle = false, className, children }: SiteHeaderProps) {
+export function SiteHeader({ className, children }: SiteHeaderProps) {
   const pathname = usePathname();
-
-  const titleContent = (
-    <span className="flex items-baseline gap-s-3 text-ink">
-      <Wordmark
-        variant="monogram"
-        className="text-[34px] sm:hidden"
-      />
-      <Wordmark
-        variant="inline"
-        className="hidden sm:inline-flex text-[28px] sm:text-[32px]"
-      />
-      <span className="label hidden md:inline-block">Your French pharmacy guide</span>
-    </span>
-  );
-  const titleClass = "flex-1 sm:flex-initial";
 
   return (
     <header className={cn("sticky top-0 z-40 bg-background border-b border-border", className)}>
       <div className="max-w-7xl mx-auto px-s-4 sm:px-s-5 lg:px-s-7">
         {/* Top row: title + nav */}
         <div className="flex items-center justify-between py-s-3 sm:py-s-4">
-          {linkTitle ? (
-            <Link href="/" className={titleClass}>
-              {titleContent}
-            </Link>
-          ) : (
-            <div className={titleClass}>
-              {titleContent}
-            </div>
-          )}
+          <Link href="/" aria-label="Pharmacie Beauty — home" className="flex-1 sm:flex-initial">
+            <span className="flex items-baseline gap-s-3 text-ink">
+              <Wordmark
+                variant="monogram"
+                className="text-[34px] sm:hidden"
+              />
+              <Wordmark
+                variant="inline"
+                className="hidden sm:inline-flex text-[28px] sm:text-[32px]"
+              />
+              <span className="label hidden md:inline-block">Your French pharmacy guide</span>
+            </span>
+          </Link>
 
           <nav aria-label="Primary" className="flex items-center gap-s-1">
             {NAV_LINKS.map((link) => {

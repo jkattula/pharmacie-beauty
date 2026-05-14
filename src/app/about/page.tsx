@@ -8,7 +8,7 @@ import { SiteHeader } from "@/components/features/site-header";
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
-      <SiteHeader linkTitle />
+      <SiteHeader />
 
       <main className="max-w-2xl mx-auto px-s-4 sm:px-s-5 lg:px-s-7 py-s-8 sm:py-s-9">
         {/* Hero */}
