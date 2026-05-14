@@ -103,6 +103,7 @@ function HomePageContent() {
           onSearch={handleSearch}
           placeholder="anti-aging eye cream, rosacea care…"
           isLoading={isLoading}
+          value={searchQuery}
         />
       </SiteHeader>
 

@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { Cormorant_Garamond, JetBrains_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import { Providers } from "./providers";
 
@@ -82,10 +81,6 @@ export default function RootLayout({
         className={`${cormorant.variable} ${mono.variable} ${script.variable} font-serif antialiased`}
       >
         <Providers>{children}</Providers>
-        <Script
-          src="https://s.skimresources.com/js/302842X1790866.skimlinks.js"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );

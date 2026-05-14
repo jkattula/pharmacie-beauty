@@ -32,7 +32,7 @@ export async function getAllProductCards(): Promise<ProductCard[]> {
     .innerJoin(brands, eq(products.brandId, brands.id))
     .leftJoin(prices, eq(products.id, prices.productId))
     .leftJoin(usAvailability, eq(products.id, usAvailability.productId))
-    .limit(50);
+    .limit(500);
 
   return results.map(r => ({
     ...r,
@@ -93,7 +93,7 @@ export async function getProductsByCategory(category: CuratedCategory): Promise<
     .leftJoin(prices, eq(products.id, prices.productId))
     .leftJoin(usAvailability, eq(products.id, usAvailability.productId))
     .where(filterCondition)
-    .limit(30);
+    .limit(500);
 
   return results.map(r => ({
     ...r,
@@ -144,7 +144,7 @@ export async function searchProducts(query: string): Promise<ProductCard[]> {
         ilike(brands.name, searchPattern)
       )
     )
-    .limit(30);
+    .limit(500);
 
   return results.map(r => ({
     ...r,

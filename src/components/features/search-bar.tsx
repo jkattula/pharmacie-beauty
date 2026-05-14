@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { Search, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
@@ -10,6 +10,8 @@ interface SearchBarProps {
   placeholder?: string;
   className?: string;
   isLoading?: boolean;
+  /** External value (e.g. from URL) — syncs into the input on change. */
+  value?: string;
 }
 
 export function SearchBar({
@@ -17,8 +19,13 @@ export function SearchBar({
   placeholder = "Search products...",
   className,
   isLoading = false,
+  value,
 }: SearchBarProps) {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(value ?? "");
+
+  useEffect(() => {
+    if (value !== undefined) setQuery(value);
+  }, [value]);
 
   const handleSubmit = useCallback(
     (e: React.FormEvent) => {

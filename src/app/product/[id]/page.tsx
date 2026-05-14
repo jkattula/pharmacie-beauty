@@ -3,7 +3,7 @@
 import { useParams, useRouter } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -168,19 +168,6 @@ export default function ProductDetailPage() {
               )}
             </div>
           </div>
-
-          {/* Buy CTA */}
-          {product.shopUrl && product.shopRetailer && (
-            <a
-              href={product.shopUrl}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              className="flex items-center justify-center gap-s-2 w-full bg-ink text-bone hover:bg-ink2 rounded-full font-mono uppercase tracking-[0.18em] text-[11px] py-s-4 px-s-5 transition-colors"
-            >
-              Buy on {product.shopRetailer}
-              <ExternalLink className="h-4 w-4" />
-            </a>
-          )}
 
           {/* Description */}
           <div>
