@@ -1,6 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getProductById } from "@/lib/db-queries";
 
+// Product IDs are Postgres UUIDs. AI-suggested cards use synthetic ids like
+// "ai-<timestamp>-<idx>" which are not real products — guard against them so a
+// non-UUID id returns a clean 404 instead of throwing a DB cast error (500).
+const UUID_RE =
+  /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
 export async function GET(
   request: NextRequest,
   { params }: { params: { id: string } }
@@ -8,10 +14,10 @@ export async function GET(
   try {
     const { id } = params;
 
-    if (!id) {
+    if (!id || !UUID_RE.test(id)) {
       return NextResponse.json(
-        { error: "Product ID is required" },
-        { status: 400 }
+        { error: "Product not found" },
+        { status: 404 }
       );
     }
 

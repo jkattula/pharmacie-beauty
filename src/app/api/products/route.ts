@@ -11,10 +11,14 @@ const VALID_CATEGORIES: CuratedCategory[] = [
   "best_sunscreens",
 ];
 
+// Cap search input length to bound DB work and the size of any text passed to
+// the AI fallback (limits abuse / runaway token usage).
+const MAX_SEARCH_LENGTH = 100;
+
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams;
-    const search = searchParams.get("search")?.trim();
+    const search = searchParams.get("search")?.trim().slice(0, MAX_SEARCH_LENGTH);
     const category = searchParams.get("category") as CuratedCategory | null;
 
     let products: ProductCard[] = [];

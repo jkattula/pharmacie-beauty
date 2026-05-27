@@ -40,7 +40,8 @@ export function ProductCard({ product, onClick, className }: ProductCardProps) {
     <article
       onClick={onClick}
       className={cn(
-        "group relative flex flex-col bg-cream rounded-md overflow-hidden border border-border/60 card-hover cursor-pointer",
+        "group relative flex flex-col bg-cream rounded-md overflow-hidden border border-border/60",
+        onClick && "card-hover cursor-pointer",
         className
       )}
     >

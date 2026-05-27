@@ -39,13 +39,20 @@ export function ProductGrid({
 
   return (
     <div className={cn(GRID_CLASSES, className)}>
-      {products.map((product) => (
-        <ProductCard
-          key={product.id}
-          product={product}
-          onClick={() => onProductClick?.(product.id)}
-        />
-      ))}
+      {products.map((product) => {
+        // AI-suggested cards use synthetic "ai-..." ids that have no detail
+        // page — leave them non-navigable so they don't dead-end on a 404.
+        const isNavigable = !product.id.startsWith("ai-");
+        return (
+          <ProductCard
+            key={product.id}
+            product={product}
+            onClick={
+              isNavigable ? () => onProductClick?.(product.id) : undefined
+            }
+          />
+        );
+      })}
     </div>
   );
 }
