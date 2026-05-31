@@ -8,6 +8,7 @@ import { Wordmark } from "@/components/ui/wordmark";
 const NAV_LINKS = [
   { href: "/", label: "Browse" },
   { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 interface SiteHeaderProps {
